@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>hello clover</title>
+    <link href="/2020/04/19/hello-clover/"/>
+    <url>/2020/04/19/hello-clover/</url>
+    
+    <content type="html"><![CDATA[<h1 id="My-first-blog-to-my-lover"><a href="#My-first-blog-to-my-lover" class="headerlink" title="My first blog to my lover"></a>My first blog to my lover</h1><h2 id="欢迎我的第一位访客，我的小可爱，Miss-Clover"><a href="#欢迎我的第一位访客，我的小可爱，Miss-Clover" class="headerlink" title="欢迎我的第一位访客，我的小可爱，Miss Clover"></a>欢迎我的第一位访客，我的小可爱，Miss Clover</h2><p><img src="/img/clover.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="啊，不对，搞错了，重来！"><a href="#啊，不对，搞错了，重来！" class="headerlink" title="啊，不对，搞错了，重来！"></a><del>啊，不对，搞错了，重来！</del></h2><p><img src="/img/xiaoli.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="这才是我的小可爱，嘿嘿！"><a href="#这才是我的小可爱，嘿嘿！" class="headerlink" title="这才是我的小可爱，嘿嘿！"></a>这才是我的小可爱，嘿嘿！</h2><p>手动笔芯，爱你呦！<br>2020.4.19</p><span class="label label-primary">clover</span>]]></content>
+    
+    
+    <categories>
+      
+      <category>Clover</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hello</tag>
+      
+      <tag>Clover</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2020/04/18/hello-world/"/>
+    <url>/2020/04/18/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="hljs bash">$ hexo new <span class="hljs-string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="hljs bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="hljs bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="hljs bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Hello</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Hexo</tag>
+      
+      <tag>World</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
