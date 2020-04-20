@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Fluid 加入 Valine 评论模块</title>
+    <link href="/2020/04/20/Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AEValine%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97/"/>
+    <url>/2020/04/20/Fluid%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AEValine%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Fluid-加入-Valine-评论模块"><a href="#Fluid-加入-Valine-评论模块" class="headerlink" title="Fluid 加入 Valine 评论模块"></a>Fluid 加入 Valine 评论模块</h1><blockquote><p>本文默认你已经安装好nodejs、hexo等环境，并且已经根据 Fluid指南 安装好网站主题！</p></blockquote><p>博主之前用过 utterances 评论模块，但是如果不换个姿势冲浪这东西就很难刷出来，等于没用，所以转向使用 Valine 了</p><h2 id="1-关于Valine"><a href="#1-关于Valine" class="headerlink" title="1. 关于Valine"></a>1. 关于Valine</h2><blockquote><p>Valine 是一款基于LeanCloud的快速、简洁且高效的无后端评论系统。<br>理论上支持但不限于静态博客，目前支持Hexo、Jekyll、Typecho、Hugo、Ghost 等博客程序。</p></blockquote><h2 id="2-Valine-获取-APP-ID-和-APP-Key"><a href="#2-Valine-获取-APP-ID-和-APP-Key" class="headerlink" title="2. Valine 获取 APP ID 和 APP Key"></a>2. Valine 获取 APP ID 和 APP Key</h2><p>① 打开<a href="https://valine.js.org/" target="_blank" rel="noopener">Valine 官方网站</a>，点击右侧快速开始，根据提示注册并登陆 Valine </p><p><img src="/img/Valine/zhuce.jpg" srcset="/img/loading.gif" alt=""></p><p>② 创建应用</p><p><img src="/img/Valine/chuangjian.jpg" srcset="/img/loading.gif" alt=""></p><p>③ 点击右上角小齿轮</p><p><img src="/img/Valine/chilun.jpg" srcset="/img/loading.gif" alt=""></p><p>④ 如图下图获取 AppID 和 Appkey</p><p><img src="/img/Valine/idkey.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="3-添加-AppID-和-AppKey"><a href="#3-添加-AppID-和-AppKey" class="headerlink" title="3. 添加 AppID 和 AppKey"></a>3. 添加 AppID 和 AppKey</h2><p>打开 网站根目录/source/data/fluid_config.yml 修改第211-213行</p><pre><code class="hljs yml"><span class="hljs-attr">comments:</span>  <span class="hljs-comment"># 评论</span><span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment"># 开启评论</span><span class="hljs-attr">type:</span> <span class="hljs-string">valine</span>  <span class="hljs-comment"># 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances</span></code></pre><p>然后至第267-268行，填写 AppId 和 AppKey</p><pre><code class="hljs yml"><span class="hljs-attr">valine:</span>  <span class="hljs-attr">appid:</span> <span class="hljs-comment"># 从 LeanCloud 的应用中得到的 appId</span>  <span class="hljs-attr">appkey:</span> <span class="hljs-comment"># 从 LeanCloud 的应用中得到的 APPKey</span>  <span class="hljs-attr">placeholder:</span> <span class="hljs-string">说点什么</span> <span class="hljs-comment"># 评论框占位提示符</span>  <span class="hljs-attr">path:</span> <span class="hljs-string">window.location.pathname</span> <span class="hljs-comment"># 当前文章页路径，用于区分不同的文章页，以保证正确读取该文章页下的评论列表</span>  <span class="hljs-attr">avatar:</span> <span class="hljs-string">retro</span> <span class="hljs-comment"># Gravatar 头像展示方式</span>  <span class="hljs-attr">meta:</span> <span class="hljs-string">['nick',</span> <span class="hljs-string">'mail'</span><span class="hljs-string">,</span> <span class="hljs-string">'link'</span><span class="hljs-string">]</span>  <span class="hljs-comment"># 评论者相关属性</span>  <span class="hljs-attr">pageSize:</span> <span class="hljs-number">10</span> <span class="hljs-comment"># 评论列表分页，每页条数</span>  <span class="hljs-attr">lang:</span> <span class="hljs-string">zh-CN</span> <span class="hljs-comment"># zh-CN | zh-TW | en | ja</span>  <span class="hljs-attr">highlight:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 代码高亮</span>  <span class="hljs-attr">recordIP:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 是否记录评论者IP</span>  <span class="hljs-attr">serverURLs:</span> <span class="hljs-comment"># 该配置适用于国内自定义域名用户, 海外版本会自动检测(无需手动填写)</span>  <span class="hljs-attr">mathJax:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 是否启用MathJax</span></code></pre><p>至此已经配置完毕，使用<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code>命令，然后在本地打开 localhost:4000 即可见到评论模块已经出现！</p><blockquote><p>如果你认为本文写的不错，记得分享给需要的朋友哦！</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>Fluid</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Fluid</tag>
+      
+      <tag>Valine</tag>
+      
+      <tag>评论模块</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>免费节点（持续更新）</title>
     <link href="/2020/04/19/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"/>
     <url>/2020/04/19/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
