@@ -17,8 +17,8 @@
   <meta name="description" content="">
   <meta name="author" content="Darren">
   <meta name="keywords" content="python,C/C++,图像处理，人工智能，目标检测，目标识别">
-  <title>如何科学冲浪 - Darren&#39;s blog</title>
-
+  <title>如何科学冲浪 - 知否_Darren&#39;s blog</title>
+  
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
@@ -52,7 +52,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Darren's blog</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>知否_Darren's blog</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -288,7 +288,7 @@
                 
               </div>
               
-                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+                <p class="note note-warning">本文作者：知否_Darren<br>本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
               
               
                 <div class="post-prevnext row">
@@ -319,6 +319,7 @@
             
               <!-- Comments -->
               <div class="comments" id="comments">
+                <p class="note note-info">本站支持评论邮件提醒功能，在邮箱输入框中留下你的邮箱，这样就能通过邮件收到回复！</p>
                 
                 
   <div id="vcomments"></div>
@@ -418,36 +419,6 @@
       <a class="qr-trigger" target="_blank" rel="nofollow noopener"><span>Clover</span>
         <img class="qr-img" src="/img/douyin.png" srcset="/img/favicon.png" alt="qrcode">
       </a>
-      <br>
-      <span id="timeDate">载入天数...</span>
-      <span id="times">载入时分秒...</span>
-      <script>
-      var now = new Date();
-      function createtime(){
-          var grt= new Date("04/17/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
-          now.setTime(now.getTime()+250);
-          days = (now - grt ) / 1000 / 60 / 60 / 24;
-          dnum = Math.floor(days);
-          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
-          hnum = Math.floor(hours);
-          if(String(hnum).length ==1 ){
-              hnum = "0" + hnum;
-          }
-          minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-          mnum = Math.floor(minutes);
-          if(String(mnum).length ==1 ){
-                    mnum = "0" + mnum;
-          }
-          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-          snum = Math.round(seconds);
-          if(String(snum).length ==1 ){
-                    snum = "0" + snum;
-          }
-          document.getElementById("timeDate").innerHTML = "本站安全运行&nbsp"+dnum+"&nbsp天";
-          document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
-      }
-      setInterval("createtime()",250);
-      </script>
     </div>
     <div>
       <p id="hitokoto">:D 获取中...</p>
@@ -461,25 +432,6 @@
             .catch(console.error)
       </script>
     </div>
-    
-  <div>
-    
-      <!-- 不蒜子统计PV -->
-      
-      <span id="busuanzi_container_site_pv" style="display: none">
-      总访问量 <span id="busuanzi_value_site_pv"></span> 次
-    </span>
-    
-    
-      <!-- 不蒜子统计UV -->
-      
-      <span id="busuanzi_container_site_uv" style="display: none">
-      总访客数 <span id="busuanzi_value_site_uv"></span> 人
-    </span>
-    
-  </div>
-
-
     
 
     

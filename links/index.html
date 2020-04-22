@@ -17,8 +17,8 @@
   <meta name="description" content="">
   <meta name="author" content="Darren">
   <meta name="keywords" content="python,C/C++,图像处理，人工智能，目标检测，目标识别">
-  <title>友链 - Darren&#39;s blog</title>
-
+  <title>友链 - 知否_Darren&#39;s blog</title>
+  
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
@@ -52,7 +52,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>Darren's blog</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>知否_Darren's blog</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -172,16 +172,16 @@
   
     
     <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="https://hexo.fluid-dev.com/docs/" class="card-body hover-with-bg" target="_blank" rel="noopener">
+      <a href="https://darrenclover.gitee.io/tags/" class="card-body hover-with-bg" target="_blank" rel="noopener">
         <div class="card-content">
           
             <div class="link-avatar my-auto">
-              <img src="/img/favicon.png" srcset="/img/loading.gif" alt="主题使用指南" />
+              <img src="/img/zhifou.jpg" srcset="/img/loading.gif" alt="留言板" />
             </div>
           
           <div class="link-text">
-            <div class="link-title">主题使用指南</div>
-            <div class="link-intro">主题使用指南</div>
+            <div class="link-title">留言板</div>
+            <div class="link-intro">留言板</div>
           </div>
         </div>
       </a>
@@ -204,6 +204,85 @@
       </a>
     </div>
   
+    
+    <div class="card col-lg-4 col-md-6 col-sm-12">
+      <a href="https://neatman.club" class="card-body hover-with-bg" target="_blank" rel="noopener">
+        <div class="card-content">
+          
+            <div class="link-avatar my-auto">
+              <img src="https://file.neatman.club/b3a93fd7e002ea41412d/66.jpg" srcset="/img/loading.gif" alt="Neat" />
+            </div>
+          
+          <div class="link-text">
+            <div class="link-title">Neat</div>
+            <div class="link-intro">遇见你我也很开心~</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    
+    <div class="card col-lg-4 col-md-6 col-sm-12">
+      <a href="https://eatrice.top" class="card-body hover-with-bg" target="_blank" rel="noopener">
+        <div class="card-content">
+          
+            <div class="link-avatar my-auto">
+              <img src="https://eatrice.top/img/favcion.png" srcset="/img/loading.gif" alt="吃白饭的休伯利安号" />
+            </div>
+          
+          <div class="link-text">
+            <div class="link-title">吃白饭的休伯利安号</div>
+            <div class="link-intro">一只努力的考研狗</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+</div>
+
+<p class="note note-info">  
+  友链格式：<br>
+  名字： 知否<br>
+  链接： https://darrenclover.gitee.io/<br>
+  描述： 一吃一大碗，一睡一整天。<br>
+  头像： https://darrenclover.gitee.io/img/touxiang.jpg <br>
+  友站添加后还请在下方留言告知。<br></p>
+
+  <p class="note note-info">本站支持评论邮件提醒功能，在邮箱输入框中留下你的邮箱，这样后台就能发送邮件通知到你啦！</p>
+
+<!-- Comments -->
+<div class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script defer src="https://cdn.staticfile.org/valine/1.4.5/Valine.min.js" ></script>
+
+  <script type="text/javascript">
+    var oldLoadVa = window.onload;
+    window.onload = function () {
+      oldLoadVa && oldLoadVa();
+
+      new Valine({
+        el: "#vcomments",
+        app_id: "7YiYmggzx9dypQiNenXRX7oJ-gzGzoHsz",
+        app_key: "H1OjeqhzsqDE0yTqBbFHP2rU",
+        placeholder: "1.填写邮箱，评论收到回复后会有邮件提醒！   2.输入 QQ 号可自动识别头像和昵称哦！",
+        path: window.location.pathname,
+        avatar: "retro",
+        meta: ["nick","mail","link"],
+        pageSize: "10",
+        lang: "zh-CN",
+        highlight: true,
+        recordIP: true,
+        serverURLs: "",
+        mathJax: false
+      });
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
 </div>
 
               </div>
@@ -258,36 +337,6 @@
       <a class="qr-trigger" target="_blank" rel="nofollow noopener"><span>Clover</span>
         <img class="qr-img" src="/img/douyin.png" srcset="/img/favicon.png" alt="qrcode">
       </a>
-      <br>
-      <span id="timeDate">载入天数...</span>
-      <span id="times">载入时分秒...</span>
-      <script>
-      var now = new Date();
-      function createtime(){
-          var grt= new Date("04/17/2020 00:00:00");//此处修改你的建站时间或者网站上线时间
-          now.setTime(now.getTime()+250);
-          days = (now - grt ) / 1000 / 60 / 60 / 24;
-          dnum = Math.floor(days);
-          hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
-          hnum = Math.floor(hours);
-          if(String(hnum).length ==1 ){
-              hnum = "0" + hnum;
-          }
-          minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
-          mnum = Math.floor(minutes);
-          if(String(mnum).length ==1 ){
-                    mnum = "0" + mnum;
-          }
-          seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-          snum = Math.round(seconds);
-          if(String(snum).length ==1 ){
-                    snum = "0" + snum;
-          }
-          document.getElementById("timeDate").innerHTML = "本站安全运行&nbsp"+dnum+"&nbsp天";
-          document.getElementById("times").innerHTML = hnum + "&nbsp小时&nbsp" + mnum + "&nbsp分&nbsp" + snum + "&nbsp秒";
-      }
-      setInterval("createtime()",250);
-      </script>
     </div>
     <div>
       <p id="hitokoto">:D 获取中...</p>
@@ -301,25 +350,6 @@
             .catch(console.error)
       </script>
     </div>
-    
-  <div>
-    
-      <!-- 不蒜子统计PV -->
-      
-      <span id="busuanzi_container_site_pv" style="display: none">
-      总访问量 <span id="busuanzi_value_site_pv"></span> 次
-    </span>
-    
-    
-      <!-- 不蒜子统计UV -->
-      
-      <span id="busuanzi_container_site_uv" style="display: none">
-      总访客数 <span id="busuanzi_value_site_uv"></span> 人
-    </span>
-    
-  </div>
-
-
     
 
     
