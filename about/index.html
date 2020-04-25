@@ -277,7 +277,18 @@
 <p><strong>以往也曾多次有建立博客的想法，分享学习过程中遇到并解决困难方法，但总停留在想象中</strong></p>
 <p><strong>此时，天时地利人和，建立此博客，分享日常的琐碎</strong></p>
 <h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p><strong>计算机应用技术专业，研究生二年级（2020），本硕双非</strong><br>先写到这吧</p>
-
+<h2 id="一言："><a href="#一言：" class="headerlink" title="一言："></a>一言：</h2> <div>
+     <p id="hitokoto">:D 获取中...</p>
+        <script>
+        fetch('https://v1.hitokoto.cn')
+          .then(response => response.json())
+          .then(data => {
+            const hitokoto = document.getElementById('hitokoto')
+            hitokoto.innerText = data.hitokoto
+            })
+            .catch(console.error)
+        </script>
+</div>
 </div>
 
               </div>
@@ -338,18 +349,7 @@
       <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><b>Fluid </b></a>
 
     </div>
-    <div>
-      <p id="hitokoto">:D 获取中...</p>
-      <script>
-        fetch('https://v1.hitokoto.cn')
-          .then(response => response.json())
-          .then(data => {
-            const hitokoto = document.getElementById('hitokoto')
-            hitokoto.innerText = data.hitokoto
-            })
-            .catch(console.error)
-      </script>
-    </div>
+
     <div title="MySSL 安全签章" id="myssl_seal" onclick="window.open('https://myssl.com/seal/detail?domain=darrenclover.gitee.io','MySSL安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" style="text-align: center">
       <img src="https://static.myssl.com/res/images/myssl-id1.png" srcset="https://sealres.myssl.com/seal/img/1x/seal.svg?domain=darrenclover.gitee.io" alt="MySSL 安全签章" style="width: 3rem; height: auto; cursor: pointer">
     </div>
