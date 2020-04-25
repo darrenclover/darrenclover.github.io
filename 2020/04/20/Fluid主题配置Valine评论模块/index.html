@@ -9,23 +9,23 @@
   <meta name="google-site-verification" content="6IVV6ZS7WxqwyU2iE_WhcRg9Z9qIBM028kdf0Nz93pA" />
   <meta name="google-site-verification" content="D_1bNDMhyP-bXIXTQNOiR7CPE_NZ0eIu2j63bnbd3y8" />
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/darrenblog.jpg">
   <link rel="icon" type="image/png" href="/img/darrenblog.jpg">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
+  <meta name="description" content="分享技术，分享生活">
   <meta name="author" content="Darren">
   <meta name="keywords" content="python,C/C++,图像处理，人工智能，目标检测，目标识别">
-  <title>Fluid 加入 Valine 评论模块 - 知否_Darren&#39;s blog</title>
+  <title>Fluid 加入 Valine 评论模块 - 知否_Darren ’s blog</title>
   
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
 
 
-  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/github-gist.min.css" />
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/gml.min.css" />
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -54,7 +54,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>知否_Darren's blog</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>知否_Darren ’s blog</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -231,12 +231,12 @@
 <p>④ 如图下图获取 AppID 和 Appkey</p>
 <p><img src="/img/Valine/idkey.jpg" srcset="/img/loading.gif" alt=""></p>
 <h2 id="3-添加-AppID-和-AppKey"><a href="#3-添加-AppID-和-AppKey" class="headerlink" title="3. 添加 AppID 和 AppKey"></a>3. 添加 AppID 和 AppKey</h2><p>打开 网站根目录/source/data/fluid_config.yml 修改第211-213行</p>
-<pre><code class="hljs yml"><span class="hljs-attr">comments:</span>  <span class="hljs-comment"># 评论</span>
+<div class="hljs"><pre><code class="hljs yml"><span class="hljs-attr">comments:</span>  <span class="hljs-comment"># 评论</span>
 <span class="hljs-attr">enable:</span> <span class="hljs-literal">true</span>  <span class="hljs-comment"># 开启评论</span>
-<span class="hljs-attr">type:</span> <span class="hljs-string">valine</span>  <span class="hljs-comment"># 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances</span></code></pre>
+<span class="hljs-attr">type:</span> <span class="hljs-string">valine</span>  <span class="hljs-comment"># 指定使用的评论模块  available: disqus | valine | gitalk | utterances | changyan | livere  推荐 utterances</span></code></pre></div>
 
 <p>然后至第267-268行，填写 AppId 和 AppKey</p>
-<pre><code class="hljs yml"><span class="hljs-attr">valine:</span>
+<div class="hljs"><pre><code class="hljs yml"><span class="hljs-attr">valine:</span>
   <span class="hljs-attr">appid:</span> <span class="hljs-comment"># 从 LeanCloud 的应用中得到的 appId</span>
   <span class="hljs-attr">appkey:</span> <span class="hljs-comment"># 从 LeanCloud 的应用中得到的 APPKey</span>
   <span class="hljs-attr">placeholder:</span> <span class="hljs-string">说点什么</span> <span class="hljs-comment"># 评论框占位提示符</span>
@@ -248,7 +248,7 @@
   <span class="hljs-attr">highlight:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 代码高亮</span>
   <span class="hljs-attr">recordIP:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 是否记录评论者IP</span>
   <span class="hljs-attr">serverURLs:</span> <span class="hljs-comment"># 该配置适用于国内自定义域名用户, 海外版本会自动检测(无需手动填写)</span>
-  <span class="hljs-attr">mathJax:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 是否启用MathJax</span></code></pre>
+  <span class="hljs-attr">mathJax:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 是否启用MathJax</span></code></pre></div>
 
 <p>至此已经配置完毕，使用<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code>命令，然后在本地打开 localhost:4000 即可见到评论模块已经出现！</p>
 <blockquote>
@@ -534,7 +534,7 @@
         '  ',
         "Fluid 加入 Valine 评论模块&nbsp;",
       ],
-      cursorChar: "_",
+      cursorChar: "☆",
       typeSpeed: 70,
       loop: false,
     });
@@ -552,6 +552,8 @@
     anchors.options = {
       placement: "right",
       visible: "hover",
+      
+      icon: "☆"
       
     };
     var el = "h1,h2,h3,h4,h5,h6".split(",");
