@@ -1,0 +1,1889 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta name="google-site-verification" content="6IVV6ZS7WxqwyU2iE_WhcRg9Z9qIBM028kdf0Nz93pA" />
+  <meta name="google-site-verification" content="D_1bNDMhyP-bXIXTQNOiR7CPE_NZ0eIu2j63bnbd3y8" />
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/darrenblog.jpg">
+  <link rel="icon" type="image/png" href="/img/darrenblog.jpg">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="分享技术，分享生活">
+  <meta name="author" content="Darren">
+  <meta name="keywords" content="python,C/C++,图像处理，人工智能，目标检测，目标识别">
+  <title>36个的web button 样式 - 知否_Darren ’s blog</title>
+  
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+<link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.18.1/styles/gml.min.css" />
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_fmb4a04yx8h.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_ijqayz9ro8k.css">
+
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.6.2/gitalk.css" />
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>知否_Darren ’s blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">
+              <i class="iconfont icon-home-fill"></i>
+              首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">
+              <i class="iconfont icon-archive-fill"></i>
+              文章</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">
+              <i class="iconfont icon-category-fill"></i>
+              分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">
+              <i class="iconfont icon-tags-fill"></i>
+              标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">
+              <i class="iconfont icon-user-fill"></i>
+              关于</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/links/">
+              <i class="iconfont icon-link-fill"></i>
+              友链</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/download/">
+              <i class="iconfont icon-switch-fill"></i>
+              软件分享</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/demo/button.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+                <div class="mt-3 post-meta">
+                  <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+                  <time datetime="2020-04-25 17:17">
+                    星期六, 四月 25日 2020, 5:17 下午
+                  </time>
+                </div>
+              
+
+              <div class="mt-1">
+                
+                  
+                  <span class="post-meta mr-2">
+                    <i class="iconfont icon-chart"></i>
+                    3.8k 字
+                  </span>
+                
+
+                
+                  
+                  <span class="post-meta mr-2">
+                      <i class="iconfont icon-clock-fill"></i>
+                    
+                    
+                    754
+                     分钟
+                  </span>
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  <span id="busuanzi_container_page_pv" class="post-meta" style="display: none">
+                    <i class="iconfont icon-eye" aria-hidden="true"></i>
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>
+                
+              </div>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <style type="text/css">
+  body{ 
+  background: #f5faff;
+  }
+  .demo_con{
+  width: 960px;
+  margin:40px auto 0;
+  }
+  .button{
+  width: 140px;
+  line-height: 38px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  text-shadow:1px 1px 1px #333;
+  border-radius: 5px;
+  margin:0 20px 20px 0;
+  position: relative;
+  overflow: hidden;
+  }
+  .button:nth-child(6n){
+  margin-right: 0;
+  }
+  .button.gray{
+  color: #8c96a0;
+  text-shadow:1px 1px 1px #fff;
+  border:1px solid #dce1e6;
+  box-shadow: 0 1px 2px #fff inset,0 -1px 0 #a8abae inset;
+  background: -webkit-linear-gradient(top,#f2f3f7,#e4e8ec);
+  background: -moz-linear-gradient(top,#f2f3f7,#e4e8ec);
+  background: linear-gradient(top,#f2f3f7,#e4e8ec);
+  }
+  .button.black{
+  border:1px solid #333;
+  box-shadow: 0 1px 2px #8b8b8b inset,0 -1px 0 #3d3d3d inset,0 -2px 3px #8b8b8b inset;
+  background: -webkit-linear-gradient(top,#656565,#4c4c4c);
+  background: -moz-linear-gradient(top,#656565,#4a4a4a);
+  background: linear-gradient(top,#656565,#4a4a4a);
+  }
+  .button.red{
+  border:1px solid #b42323;
+  box-shadow: 0 1px 2px #e99494 inset,0 -1px 0 #954b4b inset,0 -2px 3px #e99494 inset;
+  background: -webkit-linear-gradient(top,#d53939,#b92929);
+  background: -moz-linear-gradient(top,#d53939,#b92929);
+  background: linear-gradient(top,#d53939,#b92929);
+  }
+  .button.yellow{
+  border:1px solid #d2a000;
+  box-shadow: 0 1px 2px #fedd71 inset,0 -1px 0 #a38b39 inset,0 -2px 3px #fedd71 inset;
+  background: -webkit-linear-gradient(top,#fece34,#d8a605);
+  background: -moz-linear-gradient(top,#fece34,#d8a605);
+  background: linear-gradient(top,#fece34,#d8a605);
+  }
+  .button.green{
+  border:1px solid #64c878;
+  box-shadow: 0 1px 2px #b9ecc4 inset,0 -1px 0 #6c9f76 inset,0 -2px 3px #b9ecc4 inset;
+  background: -webkit-linear-gradient(top,#90dfa2,#84d494);
+  background: -moz-linear-gradient(top,#90dfa2,#84d494);
+  background: linear-gradient(top,#90dfa2,#84d494);
+  }
+  .button.blue{
+  border:1px solid #1e7db9;
+  box-shadow: 0 1px 2px #8fcaee inset,0 -1px 0 #497897 inset,0 -2px 3px #8fcaee inset;
+  background: -webkit-linear-gradient(top,#42a4e0,#2e88c0);
+  background: -moz-linear-gradient(top,#42a4e0,#2e88c0);
+  background: linear-gradient(top,#42a4e0,#2e88c0);
+  }
+  .round,
+    .side,
+    .tags{
+  padding-right: 30px;
+  }
+  .round:after{
+  position: absolute;
+  display: inline-block;
+  content: "\003c";
+  top:50%;
+  right:10px;
+  margin-top: -10px;
+  width: 17px;
+  height: 20px;
+  padding-left: 3px;
+  line-height:18px;
+  font-size: 10px;
+  font-weight: normal;
+  border-radius: 10px;
+  text-shadow:-2px 0 1px #333;
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg); 
+  transform:rotate(-90deg);
+  }
+  .gray.round:after{
+  box-shadow:1px 0 1px rgba(255,255,255,1) inset,1px 0 1px rgba(0,0,0,.2);
+  background:-webkit-linear-gradient(top,#dce1e6,#dde2e7);
+  background:-moz-linear-gradient(top,#dce1e6,#dde2e7);
+  background:linear-gradient(top,#dce1e6,#dde2e7);
+  text-shadow:-2px 0 1px #fff;
+  }
+  .black.round:after{
+  box-shadow:1px 0 1px rgba(255,255,255,.5) inset,1px 0 1px rgba(0,0,0,.9);
+  background:-webkit-linear-gradient(top,#333,#454545);
+  background:-moz-linear-gradient(top,#333,#454545);
+  background:linear-gradient(top,#333,#454545);
+  }
+  .red.round:after{
+  box-shadow:1px 0 1px rgba(255,255,255,.6) inset,1px 0 1px rgba(130,25,25,.9);
+  background:-webkit-linear-gradient(top,#b12222,#b42323);
+  background:-moz-linear-gradient(top,#b12222,#b42323);
+  background:linear-gradient(top,#b12222,#b42323);
+  }
+  .yellow.round:after{
+  box-shadow:1px 0 1px rgba(255,255,255,.8) inset,1px 0 1px rgba(148,131,4,.9);
+  background:-webkit-linear-gradient(top,#cf9d00,#d2a000);
+  background:-moz-linear-gradient(top,#cf9d00,#d2a000);
+  background:linear-gradient(top,#cf9d00,#d2a000);                         
+  }
+  .green.round:after{
+  box-shadow:1px 0 1px rgba(255,255,255,.8) inset,1px 0 1px rgba(51,126,66,.9);
+  background:-webkit-linear-gradient(top,#64c878,#6dcb80);
+  background:-moz-linear-gradient(top,#64c878,#6dcb80);
+  background:linear-gradient(top,#64c878,#6dcb80);                         
+  }
+  .blue.round:after{
+  box-shadow:1px 0 1px rgba(255,255,255,.8) inset,1px 0 1px rgba(18,85,128,.9);
+  background:-webkit-linear-gradient(top,#1e7db9,#2b85bd);
+  background:-moz-linear-gradient(top,#1e7db9,#2b85bd);
+  background:linear-gradient(top,#1e7db9,#2b85bd);                         
+  }
+  .side:after{
+  position: absolute;
+  display: inline-block;
+  content: "\00bb";
+  top:3px;
+  right:-4px;
+  width: 38px;
+  height:30px;
+  font-weight: normal;
+  line-height: 26px;
+  border-radius:0 0 5px 5px;
+  text-shadow:-2px 0 1px #333;
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+  }
+  .gray.side:after{
+  text-shadow:-2px 0 1px #fff;
+  border-top: 1px solid #d4d4d4;
+  box-shadow:-2px 0 1px #eceef1 inset;
+  background:-webkit-linear-gradient(right,#e1e6ea,#f2f2f6 60%);
+  background:-moz-linear-gradient(right,#e1e6ea,#f2f2f6 60%);
+  background:linear-gradient(right,#e1e6ea,#f2f2f6 60%); 
+  }
+  .black.side:after{
+  border-top: 1px solid #222;
+  box-shadow:-2px 0 1px #606060 inset;
+  background:-webkit-linear-gradient(right,#373737,#555 60%);
+  background:-moz-linear-gradient(right,#373737,#555 60%);
+  background:linear-gradient(right,#373737,#555 60%); 
+  }
+  .red.side:after{
+  border-top: 1px solid #aa1e1e;
+  box-shadow:-2px 0 1px #c75959 inset;
+  background:-webkit-linear-gradient(right,#b82929,#d73f3f 60%);
+  background:-moz-linear-gradient(top,#b82929,#d73f3f 60%);
+  background:linear-gradient(top,#b82929,#d73f3f 60%); 
+  }
+  .yellow.side:after{
+  border-top: 1px solid #ba8f06;
+  box-shadow:-2px 0 1px #deb842 inset;
+  background:-webkit-linear-gradient(right,#d5a406,#fdc40b 60%);
+  background:-moz-linear-gradient(right,#d5a406,#fdc40b 60%);
+  background:linear-gradient(right,#d5a406,#fdc40b 60%); 
+  }
+  .green.side:after{
+  border-top: 1px solid #53b567;
+  box-shadow:-2px 0 1px #8ad599 inset;
+  background:-webkit-linear-gradient(right,#69ca7c,#91e5a5 60%);
+  background:-moz-linear-gradient(right,#69ca7c,#91e5a5 60%);
+  background:linear-gradient(right,#69ca7c,#91e5a5 60%); 
+  }
+  .blue.side:after{
+  border-top: 1px solid #1971a8;
+  box-shadow:-2px 0 1px #559dca inset;
+  background:-webkit-linear-gradient(right,#2482bd,#3fa2e0 60%);
+  background:-moz-linear-gradient(right,#2482bd,#3fa2e0 60%);
+  background:linear-gradient(right,#2482bd,#3fa2e0 60%); 
+  }
+  .tags:after{
+  font-weight: normal;
+  position: absolute;
+  display: inline-block;
+  content: "FREE";
+  top:-3px;
+  right: -33px;
+  color: #fff;
+  text-shadow:none;
+  width: 85px;
+  height:25px;
+  line-height: 28px;
+  -webkit-transform:rotate(45deg) scale(.7,.7);
+  -moz-transform:rotate(45deg) scale(.7,.7);
+  transform:rotate(45deg) scale(.7,.7);
+  }
+  .gray.tags:after{
+  background: #8c96a0;
+  border:2px solid #fff;	
+  }
+  .black.tags:after{
+  background: #333;
+  border:2px solid #777;	
+  }
+  .red.tags:after{
+  background: #b42323;
+  border:2px solid #df4141;	
+  }
+  .yellow.tags:after{
+  background: #d2a000;
+  border:2px solid #fcc100;	
+  }
+  .green.tags:after{
+  background: #64c878;
+  border:2px solid #9bebac;	
+  }
+  .blue.tags:after{
+  background: #1e7db9;
+  border:2px solid #54b1e9;	
+  }
+  .button.rarrow,
+    .button.larrow{
+  overflow:visible;
+  }
+  .rarrow:after,	
+    .rarrow:before,
+    .larrow:after,	
+    .larrow:before{
+  position:absolute;
+  content: "";
+  display: block;
+  width: 28px;
+  height: 28px;
+  -webkit-transform:rotate(45deg);
+  -moz-transform:rotate(45deg);
+  transform:rotate(45deg);
+  }
+  .rarrow:before{
+  width: 27px;
+  height: 27px;
+  top: 6px;
+  right: -13px;
+  clip: rect(auto auto 26px 2px);
+  }
+  .rarrow:after{
+  top: 6px;
+  right: -12px;
+  clip: rect(auto auto 26px 2px);
+  }
+  .gray.rarrow:before{
+  background: #d6dbe0;
+  }
+  .gray.rarrow:after{
+  box-shadow: 0 1px 0 #fff inset,-1px 0 0 #b7babd inset;
+  background:-webkit-linear-gradient(top left,#f2f3f7,#e4e8ec);
+  background:-moz-linear-gradient(top left,#f2f3f7,#e4e8ec);
+  background:linear-gradient(top left,#f2f3f7,#e4e8ec);
+  }
+  .black.rarrow:before{
+  background: #333;
+  }
+  .black.rarrow:after{
+  box-shadow: 0 1px 0 #8B8B8B inset,-1px 0 0 #3d3d3d inset,-2px 0 0 #8B8B8B inset;
+  background:-webkit-linear-gradient(top left,#656565,#4C4C4C);
+  background:-moz-linear-gradient(top left,#656565,#4C4C4C);
+  background:linear-gradient(top left,#656565,#4C4C4C);
+  }
+  .red.rarrow:before{
+  background: #B42323;
+  }
+  .red.rarrow:after{
+  box-shadow: 0 1px 0 #E99494 inset,-1px 0 0 #954B4B inset,-2px 0 0 #E99494 inset;
+  background:-webkit-linear-gradient(top left,#D53939,#B92929);
+  background:-moz-linear-gradient(top left,#D53939,#B92929);
+  background:linear-gradient(top left,#D53939,#B92929);
+  }
+  .yellow.rarrow:before{
+  background: #D2A000;
+  }
+  .yellow.rarrow:after{
+  box-shadow: 0 1px 0 #FEDD71 inset,-1px 0 0 #A38B39 inset,-2px 0 0 #FEDD71 inset;
+  background:-webkit-linear-gradient(top left,#FECE34,#D8A605);
+  background:-moz-linear-gradient(top left,#FECE34,#D8A605);
+  background:linear-gradient(top left,#FECE34,#D8A605);
+  }
+  .green.rarrow:before{
+  background: #64C878;
+  }
+  .green.rarrow:after{
+  box-shadow: 0 1px 0 #B9ECC4 inset,-1px 0 0 #6C9F76 inset,-2px 0 0 #B9ECC4 inset;
+  background:-webkit-linear-gradient(top left,#90DFA2,#84D494);
+  background:-moz-linear-gradient(top left,#90DFA2,#84D494);
+  background:linear-gradient(top left,#90DFA2,#84D494);
+  }
+  .blue.rarrow:before{
+  background: #1E7DB9;
+  }
+  .blue.rarrow:after{
+  box-shadow: 0 1px 0 #8FCAEE inset,-1px 0 0 #497897 inset,-2px 0 0 #8FCAEE inset;
+  background:-webkit-linear-gradient(top left,#42A4E0,#2E88C0);
+  background:-moz-linear-gradient(top left,#42A4E0,#2E88C0);
+  background:linear-gradient(top left,#42A4E0,#2E88C0);
+  }
+  .larrow:before{
+  top: 6px;
+  left: -13px;
+  width: 27px;
+  height: 27px;
+  clip: rect(2px 26px auto auto);
+  }
+  .larrow:after{
+  top: 6px;
+  left: -12px;
+  clip: rect(2px 26px auto auto);
+  }
+  .gray.larrow:before{
+  background: #d6dbe0;
+  }
+  .gray.larrow:after{
+  box-shadow: 0 -1px 0 #b7babd inset,1px 0 0 #fff inset;
+  background:-webkit-linear-gradient(top left,#f2f3f7,#e4e8ec);
+  background:-moz-linear-gradient(top left,#f2f3f7,#e4e8ec);
+  background:linear-gradient(top left,#f2f3f7,#e4e8ec);
+  }
+  .black.larrow:before{
+  background: #333;
+  }
+  .black.larrow:after{
+  box-shadow: 0 -1px 0 #3d3d3d inset,0 -2px 0 #8B8B8B inset,1px 0 0 #8B8B8B inset;
+  background:-webkit-linear-gradient(top left,#656565,#4C4C4C);
+  background:-moz-linear-gradient(top left,#656565,#4C4C4C);
+  background:linear-gradient(top left,#656565,#4C4C4C);
+  }
+  .red.larrow:before{
+  background: #B42323;
+  }
+  .red.larrow:after{
+  box-shadow: 0 -1px 0 #954B4B inset,0 -2px 0 #E99494 inset,1px 0 0 #E99494 inset;
+  background:-webkit-linear-gradient(top left,#D53939,#B92929);
+  background:-moz-linear-gradient(top left,#D53939,#B92929);
+  background:linear-gradient(top left,#D53939,#B92929);
+  }
+  .yellow.larrow:before{
+  background: #D2A000;
+  }
+  .yellow.larrow:after{
+  box-shadow: 0 -1px 0 #A38B39 inset,0 -2px 0 #FEDD71 inset,1px 0 0 #FEDD71 inset;
+  background:-webkit-linear-gradient(top left,#FECE34,#D8A605);
+  background:-moz-linear-gradient(top left,#FECE34,#D8A605);
+  background:linear-gradient(top left,#FECE34,#D8A605);
+  }
+  .green.larrow:before{
+  background: #64C878;
+  }
+  .green.larrow:after{
+  box-shadow: 0 -1px 0 #6C9F76 inset,0 -2px 0 #B9ECC4 inset,1px 0 0 #B9ECC4 inset;
+  background:-webkit-linear-gradient(top left,#90DFA2,#84D494);
+  background:-moz-linear-gradient(top left,#90DFA2,#84D494);
+  background:linear-gradient(top left,#90DFA2,#84D494);
+  }
+  .blue.larrow:before{
+  background: #1E7DB9;
+  }
+  .blue.larrow:after{
+  box-shadow: 0 -1px 0 #497897 inset,0 -2px 0 #8FCAEE inset,1px 0 0 #8FCAEE inset;
+  background:-webkit-linear-gradient(top left,#42A4E0,#2E88C0);
+  background:-moz-linear-gradient(top left,#42A4E0,#2E88C0);
+  background:linear-gradient(top left,#42A4E0,#2E88C0);
+  }
+  .gray:hover{
+  background: -webkit-linear-gradient(top,#fefefe,#ebeced);
+  background: -moz-linear-gradient(top,#f2f3f7,#ebeced);
+  background: linear-gradient(top,#f2f3f7,#ebeced);
+  }
+  .black:hover{
+  background: -webkit-linear-gradient(top,#818181,#575757);
+  background: -moz-linear-gradient(top,#818181,#575757);
+  background: linear-gradient(top,#818181,#575757);
+  }
+  .red:hover{
+  background: -webkit-linear-gradient(top,#eb6f6f,#c83c3c);
+  background: -moz-linear-gradient(top,#eb6f6f,#c83c3c);
+  background: linear-gradient(top,#eb6f6f,#c83c3c);
+  }
+  .yellow:hover{
+  background: -webkit-linear-gradient(top,#ffd859,#e3bb38);
+  background: -moz-linear-gradient(top,#ffd859,#e3bb38);
+  background: linear-gradient(top,#ffd859,#e3bb38);
+  }
+  .green:hover{
+  background: -webkit-linear-gradient(top,#aaebb9,#82d392);
+  background: -moz-linear-gradient(top,#aaebb9,#82d392);
+  background: linear-gradient(top,#aaebb9,#82d392);
+  }
+  .blue:hover{
+  background: -webkit-linear-gradient(top,#70bfef,#4097ce);
+  background: -moz-linear-gradient(top,#70bfef,#4097ce);
+  background: linear-gradient(top,#70bfef,#4097ce);
+  }
+  .gray:active{
+  top:1px;
+  box-shadow: 0 1px 3px #a8abae inset,0 3px 0 #fff;
+  background: -webkit-linear-gradient(top,#e4e8ec,#e4e8ec);
+  background: -moz-linear-gradient(top,#e4e8ec,#e4e8ec);
+  background: linear-gradient(top,#e4e8ec,#e4e8ec);
+  }
+  .black:active{
+  top:1px;
+  box-shadow: 0 1px 3px #111 inset,0 3px 0 #fff;
+  background: -webkit-linear-gradient(top,#424242,#575757);
+  background: -moz-linear-gradient(top,#424242,#575757);
+  background: linear-gradient(top,#424242,#575757);
+  }
+  .red:active{
+  top:1px;
+  box-shadow: 0 1px 3px #5b0505 inset,0 3px 0 #fff;
+  background: -webkit-linear-gradient(top,#b11a1a,#bf2626);
+  background: -moz-linear-gradient(top,#b11a1a,#bf2626);
+  background: linear-gradient(top,#b11a1a,#bf2626);
+  }
+  .yellow:active{
+  top:1px;
+  box-shadow: 0 1px 3px #816b1f inset,0 3px 0 #fff;
+  background: -webkit-linear-gradient(top,#d3a203,#dba907);
+  background: -moz-linear-gradient(top,#d3a203,#dba907);
+  background: linear-gradient(top,#d3a203,#dba907);
+  }
+  .green:active{
+  top:1px;
+  box-shadow: 0 1px 3px #4d7254 inset,0 3px 0 #fff;
+  background: -webkit-linear-gradient(top,#5eac6e,#72b37e);
+  background: -moz-linear-gradient(top,#5eac6e,#72b37e);
+  background: linear-gradient(top,#5eac6e,#72b37e);
+  }
+  .blue:active{
+  top:1px;
+  box-shadow: 0 1px 3px #114566 inset,0 3px 0 #fff;
+  background: -webkit-linear-gradient(top,#1a71a8,#1976b1);
+  background: -moz-linear-gradient(top,#1a71a8,#1976b1);
+  background: linear-gradient(top,#1a71a8,#1976b1);
+  }
+  .gray.side:hover:after{
+  background:-webkit-linear-gradient(right,#e7ebee,#f8f8f8 60%);
+  background:-moz-linear-gradient(right,#e7ebee,#f8f8f8 60%);
+  background:linear-gradient(right,#e7ebee,#f8f8f8 60%);
+  }
+  .black.side:hover:after{
+  background:-webkit-linear-gradient(right,#555,#6f6f6f 60%);
+  background:-moz-linear-gradient(right,#555,#6f6f6f 60%);
+  background:linear-gradient(right,#555,#6f6f6f 60%); 
+  }
+  .red.side:hover:after{
+  background:-webkit-linear-gradient(right,#c43333,#dc4949 60%);
+  background:-moz-linear-gradient(right,#c43333,#dc4949 60%);
+  background:linear-gradient(right,#c43333,#dc4949 60%); 
+  }
+  .yellow.side:hover:after{
+  background:-webkit-linear-gradient(right,#e1b21a,#fbc71d 60%);
+  background:-moz-linear-gradient(right,#e1b21a,#fbc71d 60%);
+  background:linear-gradient(right,#e1b21a,#fbc71d 60%); 
+  }
+  .green.side:hover:after{
+  background:-webkit-linear-gradient(right,#85da95,#94e0a5 60%);
+  background:-moz-linear-gradient(right,#85da95,#94e0a5 60%);
+  background:linear-gradient(right,#85da95,#94e0a5 60%); 
+  }
+  .blue.side:hover:after{
+  background:-webkit-linear-gradient(right,#338fc8,#56b2eb 60%);
+  background:-moz-linear-gradient(right,#338fc8,#56b2eb 60%);
+  background:linear-gradient(right,#338fc8,#56b2eb 60%); 
+  }
+  .gray.side:active:after{
+  top:4px;
+  border-top: 1px solid #9fa6ab;
+  box-shadow:-1px 0 1px #a8abae inset;
+  background:-webkit-linear-gradient(right,#e4e8ec,#e4e8ec 60%);
+  background:-moz-linear-gradient(right,#e4e8ec,#e4e8ec 60%);
+  background:linear-gradient(right,#e4e8ec,#e4e8ec 60%); 
+  }
+  .black.side:active:after{
+  box-shadow:-1px 0 1px #111 inset;
+  background:-webkit-linear-gradient(right,#414040,#4d4c4c 60%);
+  background:-moz-linear-gradient(right,#414040,#4d4c4c 60%);
+  background:linear-gradient(right,#414040,#4d4c4c 60%); 
+  }
+  .red.side:active:after{
+  box-shadow:-1px 0 1px #4b0707 inset;
+  background:-webkit-linear-gradient(right,#b11a1a,#b11a1a 60%);
+  background:-moz-linear-gradient(right,#b11a1a,#b11a1a 60%);
+  background:linear-gradient(right,#b11a1a,#b11a1a 60%); 
+  }
+  .yellow.side:active:after{
+  box-shadow:-1px 0 1px #816b1f inset;
+  background:-webkit-linear-gradient(right,#d3a203,#dba907 60%);
+  background:-moz-linear-gradient(right,#d3a203,#dba907 60%);
+  background:linear-gradient(right,#d3a203,#dba907 60%); 
+  }
+  .green.side:active:after{
+  box-shadow:-1px 0 1px #33663d inset;
+  background:-webkit-linear-gradient(right,#63a870,#72b37e 60%);
+  background:-moz-linear-gradient(right,#63a870,#72b37e 60%);
+  background:linear-gradient(right,#63a870,#72b37e 60%); 
+  }
+  .blue.side:active:after{
+  box-shadow:-1px 0 1px #114566 inset;
+  background:-webkit-linear-gradient(right,#1a71a8,#1976b1 60%);
+  background:-moz-linear-gradient(right,#1a71a8,#1976b1 60%);
+  background:linear-gradient(right,#1a71a8,#1976b1 60%); 
+  }
+  .gray.rarrow:hover:after,
+    .gray.rarrow:hover:after{
+  background:-webkit-linear-gradient(top left,#fefefe,#ebeced);
+  background:-moz-linear-gradient(top left,#fefefe,#ebeced);
+  background:linear-gradient(top left,#fefefe,#ebeced);
+  }
+  .black.rarrow:hover:after,
+    .black.larrow:hover:after{
+  background:-webkit-linear-gradient(top left,#818181,#575757);
+  background:-moz-linear-gradient(top left,#818181,#575757);
+  background:linear-gradient(top left,#818181,#575757);
+  }
+  .red.rarrow:hover:after,
+    .red.larrow:hover:after{
+  background:-webkit-linear-gradient(top left,#eb6f6f,#c83c3c);
+  background:-moz-linear-gradient(top left,#eb6f6f,#c83c3c);
+  background:linear-gradient(top left,#eb6f6f,#c83c3c);
+  }
+  .yellow.rarrow:hover:after,
+    .yellow.larrow:hover:after{
+  background:-webkit-linear-gradient(top left,#ffd859,#e3bb38);
+  background:-moz-linear-gradient(top left,#ffd859,#e3bb38);
+  background:linear-gradient(top left,#ffd859,#e3bb38);
+  }
+  .green.rarrow:hover:after,
+    .green.larrow:hover:after{
+  background:-webkit-linear-gradient(top left,#aaebb9,#82d392);
+  background:-moz-linear-gradient(top left,#aaebb9,#82d392);
+  background:linear-gradient(top left,#aaebb9,#82d392);
+  }
+  .blue.rarrow:hover:after,
+    .blue.larrow:hover:after{
+  background:-webkit-linear-gradient(top left,#70bfef,#4097ce);
+  background:-moz-linear-gradient(top left,#70bfef,#4097ce);
+  background:linear-gradient(top left,#70bfef,#4097ce);
+  }
+  .gray.rarrow:active:after,
+    .gray.larrow:active:after{
+  background:-webkit-linear-gradient(top left,#e4e8ec,#e4e8ec);
+  background:-moz-linear-gradient(top left,#e4e8ec,#e4e8ec);
+  background:linear-gradient(top left,#e4e8ec,#e4e8ec);
+  }
+  .black.rarrow:active:after,
+    .black.larrow:active:after{
+  background:-webkit-linear-gradient(top left,#424242,#575757);
+  background:-moz-linear-gradient(top left,#424242,#575757);
+  background:linear-gradient(top left,#424242,#575757);
+  }
+  .red.rarrow:active:after,
+    .red.larrow:active:after{
+  background:-webkit-linear-gradient(top left,#b11a1a,#bf2626);
+  background:-moz-linear-gradient(top left,#b11a1a,#bf2626);
+  background:linear-gradient(top left,#b11a1a,#bf2626);
+  }
+  .yellow.rarrow:active:after,
+    .yellow.larrow:active:after{
+  background:-webkit-linear-gradient(top left,#d3a203,#dba907);
+  background:-moz-linear-gradient(top left,#d3a203,#dba907);
+  background:linear-gradient(top left,#d3a203,#dba907);
+  }
+  .green.rarrow:active:after,
+    .green.larrow:active:after{
+  background:-webkit-linear-gradient(top left,#63a870,#72b37e);
+  background:-moz-linear-gradient(top left,#63a870,#72b37e);
+  background:linear-gradient(top left,#63a870,#72b37e);
+  }
+  .blue.rarrow:active:after,
+    .blue.larrow:active:after{
+  background:-webkit-linear-gradient(top left,#1a71a8,#1976b1);
+  background:-moz-linear-gradient(top left,#1a71a8,#1976b1);
+  background:linear-gradient(top left,#1a71a8,#1976b1);
+  }
+  .gray.rarrow:active:after{
+  box-shadow: 0 1px 0 #b7babd inset,-1px 0 0 #b7babd inset;
+  }
+  .gray.larrow:active:after{
+  box-shadow: 0 -1px 0 #b7babd inset,1px 0 0 #b7babd inset;
+  }
+  .black.rarrow:active:after{
+  box-shadow: 0 1px 0 #333 inset,-1px 0 0 #333 inset;
+  }
+  .black.larrow:active:after{
+  box-shadow: 0 -1px 0 #333 inset,1px 0 0 #333 inset;
+  }
+  .red.rarrow:active:after{
+  box-shadow: 0 1px 0 #640909 inset,-1px 0 0 #640909 inset;
+  }
+  .red.larrow:active:after{
+  box-shadow: 0 -1px 0 #640909 inset,1px 0 0 #640909 inset;
+  }
+  .yellow.rarrow:active:after{
+  box-shadow: 0 1px 0 #816b1f inset,-1px 0 0 #816b1f inset;
+  }
+  .yellow.larrow:active:after{
+  box-shadow: 0 -1px 0 #816b1f inset,1px 0 0 #816b1f inset;
+  }
+  .green.rarrow:active:after{
+  box-shadow: 0 1px 0 #4d7254 inset,-1px 0 0 #4d7254 inset;
+  }
+  .green.larrow:active:after{
+  box-shadow: 0 -1px 0 #4d7254 inset,1px 0 0 #4d7254 inset;
+  }
+  .blue.rarrow:active:after{
+  box-shadow: 0 1px 0 #114566 inset,-1px 0 0 #114566 inset;
+  }
+  .blue.larrow:active:after{
+  box-shadow: 0 -1px 0 #114566 inset,1px 0 0 #114566 inset;
+  }
+</style>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+              <p class="note note-warning">
+                本文最后更新于：星期六, 四月 25日 2020, 5:41 下午
+              </p>
+            
+            <article class="markdown-body">
+              <h1 id="36个web-button-样式"><a href="#36个web-button-样式" class="headerlink" title="36个web button 样式"></a>36个web button 样式</h1><blockquote>
+<p>效果如图</p>
+</blockquote>
+<p><img src="/img/demo/button.jpg" srcset="/img/loading.gif" alt=""></p>
+<hr>
+<blockquote>
+<p>不知怎么回事代码高亮显示有问题，复制出去看吧</p>
+</blockquote>
+<br>
+
+<div class="hljs"><pre><code class="hljs HTML"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-meta-keyword">HTML</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en-US"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>分享几款好看的button样式<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/css"</span>&gt;</span>
+body&#123; 
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#f5faff</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.demo_con</span>&#123;</span>
+width: 960px;
+<span class="css"><span class="hljs-selector-tag">margin</span><span class="hljs-selector-pseudo">:40px</span> <span class="hljs-selector-tag">auto</span> 0;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span>&#123;</span>
+width: 140px;
+line-height: 38px;
+text-align: center;
+font-weight: bold;
+<span class="css"><span class="hljs-selector-tag">color</span>: <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">text-shadow</span><span class="hljs-selector-pseudo">:1px</span> 1<span class="hljs-selector-tag">px</span> 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#333</span>;</span>
+border-radius: 5px;
+<span class="css"><span class="hljs-selector-tag">margin</span><span class="hljs-selector-pseudo">:0</span> 20<span class="hljs-selector-tag">px</span> 20<span class="hljs-selector-tag">px</span> 0;</span>
+position: relative;
+overflow: hidden;
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span><span class="hljs-selector-pseudo">:nth-child(6n)</span>&#123;</span>
+margin-right: 0;
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span><span class="hljs-selector-class">.gray</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">color</span>: <span class="hljs-selector-id">#8c96a0</span>;</span>
+<span class="css"><span class="hljs-selector-tag">text-shadow</span><span class="hljs-selector-pseudo">:1px</span> 1<span class="hljs-selector-tag">px</span> 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:1px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#dce1e6</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 2<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#fff</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#a8abae</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span><span class="hljs-selector-class">.black</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:1px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#333</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 2<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#8b8b8b</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#3d3d3d</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#8b8b8b</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4c4c4c</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4a4a4a</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4a4a4a</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span><span class="hljs-selector-class">.red</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:1px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#b42323</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 2<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#e99494</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#954b4b</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#e99494</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#d53939</span>,<span class="hljs-selector-id">#b92929</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#d53939</span>,<span class="hljs-selector-id">#b92929</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#d53939</span>,<span class="hljs-selector-id">#b92929</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span><span class="hljs-selector-class">.yellow</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:1px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#d2a000</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 2<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#fedd71</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#a38b39</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#fedd71</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#fece34</span>,<span class="hljs-selector-id">#d8a605</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#fece34</span>,<span class="hljs-selector-id">#d8a605</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#fece34</span>,<span class="hljs-selector-id">#d8a605</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span><span class="hljs-selector-class">.green</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:1px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#64c878</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 2<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#b9ecc4</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#6c9f76</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#b9ecc4</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#90dfa2</span>,<span class="hljs-selector-id">#84d494</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#90dfa2</span>,<span class="hljs-selector-id">#84d494</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#90dfa2</span>,<span class="hljs-selector-id">#84d494</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span><span class="hljs-selector-class">.blue</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:1px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#1e7db9</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 2<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#8fcaee</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#497897</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#8fcaee</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#42a4e0</span>,<span class="hljs-selector-id">#2e88c0</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#42a4e0</span>,<span class="hljs-selector-id">#2e88c0</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#42a4e0</span>,<span class="hljs-selector-id">#2e88c0</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.round</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.side</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.tags</span>&#123;</span>
+padding-right: 30px;
+&#125;
+<span class="css"><span class="hljs-selector-class">.round</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+position: absolute;
+display: inline-block;
+content: "\003c";
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:50</span>%;</span>
+<span class="css"><span class="hljs-selector-tag">right</span><span class="hljs-selector-pseudo">:10px</span>;</span>
+margin-top: -10px;
+width: 17px;
+height: 20px;
+padding-left: 3px;
+<span class="css"><span class="hljs-selector-tag">line-height</span><span class="hljs-selector-pseudo">:18px</span>;</span>
+font-size: 10px;
+font-weight: normal;
+border-radius: 10px;
+<span class="css"><span class="hljs-selector-tag">text-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#333</span>;</span>
+<span class="css"><span class="hljs-selector-tag">-webkit-transform</span><span class="hljs-selector-pseudo">:rotate(-90deg)</span>;</span>
+<span class="css"><span class="hljs-selector-tag">-moz-transform</span><span class="hljs-selector-pseudo">:rotate(-90deg)</span>; </span>
+<span class="css"><span class="hljs-selector-tag">transform</span><span class="hljs-selector-pseudo">:rotate(-90deg)</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.round</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(255,255,255,1) <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(0,0,0,<span class="hljs-selector-class">.2</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span>,<span class="hljs-selector-id">#dce1e6</span>,<span class="hljs-selector-id">#dde2e7</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span>,<span class="hljs-selector-id">#dce1e6</span>,<span class="hljs-selector-id">#dde2e7</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span>,<span class="hljs-selector-id">#dce1e6</span>,<span class="hljs-selector-id">#dde2e7</span>);</span>
+<span class="css"><span class="hljs-selector-tag">text-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#fff</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.round</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(255,255,255,<span class="hljs-selector-class">.5</span>) <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(0,0,0,<span class="hljs-selector-class">.9</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span>,<span class="hljs-selector-id">#333</span>,<span class="hljs-selector-id">#454545</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span>,<span class="hljs-selector-id">#333</span>,<span class="hljs-selector-id">#454545</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span>,<span class="hljs-selector-id">#333</span>,<span class="hljs-selector-id">#454545</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.round</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(255,255,255,<span class="hljs-selector-class">.6</span>) <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(130,25,25,<span class="hljs-selector-class">.9</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span>,<span class="hljs-selector-id">#b12222</span>,<span class="hljs-selector-id">#b42323</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span>,<span class="hljs-selector-id">#b12222</span>,<span class="hljs-selector-id">#b42323</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span>,<span class="hljs-selector-id">#b12222</span>,<span class="hljs-selector-id">#b42323</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.round</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(255,255,255,<span class="hljs-selector-class">.8</span>) <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(148,131,4,<span class="hljs-selector-class">.9</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span>,<span class="hljs-selector-id">#cf9d00</span>,<span class="hljs-selector-id">#d2a000</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span>,<span class="hljs-selector-id">#cf9d00</span>,<span class="hljs-selector-id">#d2a000</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span>,<span class="hljs-selector-id">#cf9d00</span>,<span class="hljs-selector-id">#d2a000</span>);                         </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.round</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(255,255,255,<span class="hljs-selector-class">.8</span>) <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(51,126,66,<span class="hljs-selector-class">.9</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span>,<span class="hljs-selector-id">#64c878</span>,<span class="hljs-selector-id">#6dcb80</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span>,<span class="hljs-selector-id">#64c878</span>,<span class="hljs-selector-id">#6dcb80</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span>,<span class="hljs-selector-id">#64c878</span>,<span class="hljs-selector-id">#6dcb80</span>);                         </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.round</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(255,255,255,<span class="hljs-selector-class">.8</span>) <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">rgba</span>(18,85,128,<span class="hljs-selector-class">.9</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span>,<span class="hljs-selector-id">#1e7db9</span>,<span class="hljs-selector-id">#2b85bd</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span>,<span class="hljs-selector-id">#1e7db9</span>,<span class="hljs-selector-id">#2b85bd</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span>,<span class="hljs-selector-id">#1e7db9</span>,<span class="hljs-selector-id">#2b85bd</span>);                         </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+position: absolute;
+display: inline-block;
+content: "\00bb";
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:3px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">right</span><span class="hljs-selector-pseudo">:-4px</span>;</span>
+width: 38px;
+<span class="css"><span class="hljs-selector-tag">height</span><span class="hljs-selector-pseudo">:30px</span>;</span>
+font-weight: normal;
+line-height: 26px;
+<span class="css"><span class="hljs-selector-tag">border-radius</span><span class="hljs-selector-pseudo">:0</span> 0 5<span class="hljs-selector-tag">px</span> 5<span class="hljs-selector-tag">px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">text-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#333</span>;</span>
+<span class="css"><span class="hljs-selector-tag">-webkit-transform</span><span class="hljs-selector-pseudo">:rotate(-90deg)</span>;</span>
+<span class="css"><span class="hljs-selector-tag">-moz-transform</span><span class="hljs-selector-pseudo">:rotate(-90deg)</span>;</span>
+<span class="css"><span class="hljs-selector-tag">transform</span><span class="hljs-selector-pseudo">:rotate(-90deg)</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">text-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border-top</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#d4d4d4</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#eceef1</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#e1e6ea</span>,<span class="hljs-selector-id">#f2f2f6</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#e1e6ea</span>,<span class="hljs-selector-id">#f2f2f6</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#e1e6ea</span>,<span class="hljs-selector-id">#f2f2f6</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border-top</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#222</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#606060</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#373737</span>,<span class="hljs-selector-id">#555</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#373737</span>,<span class="hljs-selector-id">#555</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#373737</span>,<span class="hljs-selector-id">#555</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border-top</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#aa1e1e</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#c75959</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#b82929</span>,<span class="hljs-selector-id">#d73f3f</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span>,<span class="hljs-selector-id">#b82929</span>,<span class="hljs-selector-id">#d73f3f</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span>,<span class="hljs-selector-id">#b82929</span>,<span class="hljs-selector-id">#d73f3f</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border-top</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#ba8f06</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#deb842</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#d5a406</span>,<span class="hljs-selector-id">#fdc40b</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#d5a406</span>,<span class="hljs-selector-id">#fdc40b</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#d5a406</span>,<span class="hljs-selector-id">#fdc40b</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border-top</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#53b567</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#8ad599</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#69ca7c</span>,<span class="hljs-selector-id">#91e5a5</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#69ca7c</span>,<span class="hljs-selector-id">#91e5a5</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#69ca7c</span>,<span class="hljs-selector-id">#91e5a5</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">border-top</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#1971a8</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-2px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#559dca</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#2482bd</span>,<span class="hljs-selector-id">#3fa2e0</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#2482bd</span>,<span class="hljs-selector-id">#3fa2e0</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#2482bd</span>,<span class="hljs-selector-id">#3fa2e0</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.tags</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+font-weight: normal;
+position: absolute;
+display: inline-block;
+content: "FREE";
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:-3px</span>;</span>
+right: -33px;
+<span class="css"><span class="hljs-selector-tag">color</span>: <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">text-shadow</span><span class="hljs-selector-pseudo">:none</span>;</span>
+width: 85px;
+<span class="css"><span class="hljs-selector-tag">height</span><span class="hljs-selector-pseudo">:25px</span>;</span>
+line-height: 28px;
+<span class="css"><span class="hljs-selector-tag">-webkit-transform</span><span class="hljs-selector-pseudo">:rotate(45deg)</span> <span class="hljs-selector-tag">scale</span>(<span class="hljs-selector-class">.7</span>,<span class="hljs-selector-class">.7</span>);</span>
+<span class="css"><span class="hljs-selector-tag">-moz-transform</span><span class="hljs-selector-pseudo">:rotate(45deg)</span> <span class="hljs-selector-tag">scale</span>(<span class="hljs-selector-class">.7</span>,<span class="hljs-selector-class">.7</span>);</span>
+<span class="css"><span class="hljs-selector-tag">transform</span><span class="hljs-selector-pseudo">:rotate(45deg)</span> <span class="hljs-selector-tag">scale</span>(<span class="hljs-selector-class">.7</span>,<span class="hljs-selector-class">.7</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.tags</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#8c96a0</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:2px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#fff</span>;	</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.tags</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#333</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:2px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#777</span>;	</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.tags</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#b42323</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:2px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#df4141</span>;	</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.tags</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#d2a000</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:2px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#fcc100</span>;	</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.tags</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#64c878</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:2px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#9bebac</span>;	</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.tags</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#1e7db9</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border</span><span class="hljs-selector-pseudo">:2px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#54b1e9</span>;	</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.button</span><span class="hljs-selector-class">.rarrow</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.button</span><span class="hljs-selector-class">.larrow</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">overflow</span><span class="hljs-selector-pseudo">:visible</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:after</span>,	</span>
+<span class="css">	<span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:before</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:after</span>,	</span>
+<span class="css">	<span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">position</span><span class="hljs-selector-pseudo">:absolute</span>;</span>
+content: "";
+display: block;
+width: 28px;
+height: 28px;
+<span class="css"><span class="hljs-selector-tag">-webkit-transform</span><span class="hljs-selector-pseudo">:rotate(45deg)</span>;</span>
+<span class="css"><span class="hljs-selector-tag">-moz-transform</span><span class="hljs-selector-pseudo">:rotate(45deg)</span>;</span>
+<span class="css"><span class="hljs-selector-tag">transform</span><span class="hljs-selector-pseudo">:rotate(45deg)</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+width: 27px;
+height: 27px;
+top: 6px;
+right: -13px;
+clip: rect(auto auto 26px 2px);
+&#125;
+<span class="css"><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+top: 6px;
+right: -12px;
+clip: rect(auto auto 26px 2px);
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#d6dbe0</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#fff</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#b7babd</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#333</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#8B8B8B</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#3d3d3d</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-2px</span> 0 0 <span class="hljs-selector-id">#8B8B8B</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4C4C4C</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4C4C4C</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4C4C4C</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#B42323</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#E99494</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#954B4B</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-2px</span> 0 0 <span class="hljs-selector-id">#E99494</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#D53939</span>,<span class="hljs-selector-id">#B92929</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#D53939</span>,<span class="hljs-selector-id">#B92929</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#D53939</span>,<span class="hljs-selector-id">#B92929</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#D2A000</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#FEDD71</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#A38B39</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-2px</span> 0 0 <span class="hljs-selector-id">#FEDD71</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#FECE34</span>,<span class="hljs-selector-id">#D8A605</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#FECE34</span>,<span class="hljs-selector-id">#D8A605</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#FECE34</span>,<span class="hljs-selector-id">#D8A605</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#64C878</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#B9ECC4</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#6C9F76</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-2px</span> 0 0 <span class="hljs-selector-id">#B9ECC4</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#90DFA2</span>,<span class="hljs-selector-id">#84D494</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#90DFA2</span>,<span class="hljs-selector-id">#84D494</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#90DFA2</span>,<span class="hljs-selector-id">#84D494</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#1E7DB9</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#8FCAEE</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#497897</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-2px</span> 0 0 <span class="hljs-selector-id">#8FCAEE</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#42A4E0</span>,<span class="hljs-selector-id">#2E88C0</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#42A4E0</span>,<span class="hljs-selector-id">#2E88C0</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#42A4E0</span>,<span class="hljs-selector-id">#2E88C0</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+top: 6px;
+left: -13px;
+width: 27px;
+height: 27px;
+clip: rect(2px 26px auto auto);
+&#125;
+<span class="css"><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+top: 6px;
+left: -12px;
+clip: rect(2px 26px auto auto);
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#d6dbe0</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#b7babd</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#fff</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#333</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#3d3d3d</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 0 <span class="hljs-selector-id">#8B8B8B</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#8B8B8B</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4C4C4C</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4C4C4C</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#656565</span>,<span class="hljs-selector-id">#4C4C4C</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#B42323</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#954B4B</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 0 <span class="hljs-selector-id">#E99494</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#E99494</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#D53939</span>,<span class="hljs-selector-id">#B92929</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#D53939</span>,<span class="hljs-selector-id">#B92929</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#D53939</span>,<span class="hljs-selector-id">#B92929</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#D2A000</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#A38B39</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 0 <span class="hljs-selector-id">#FEDD71</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#FEDD71</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#FECE34</span>,<span class="hljs-selector-id">#D8A605</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#FECE34</span>,<span class="hljs-selector-id">#D8A605</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#FECE34</span>,<span class="hljs-selector-id">#D8A605</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#64C878</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#6C9F76</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 0 <span class="hljs-selector-id">#B9ECC4</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#B9ECC4</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#90DFA2</span>,<span class="hljs-selector-id">#84D494</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#90DFA2</span>,<span class="hljs-selector-id">#84D494</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#90DFA2</span>,<span class="hljs-selector-id">#84D494</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:before</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-id">#1E7DB9</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#497897</span> <span class="hljs-selector-tag">inset</span>,0 <span class="hljs-selector-tag">-2px</span> 0 <span class="hljs-selector-id">#8FCAEE</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#8FCAEE</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#42A4E0</span>,<span class="hljs-selector-id">#2E88C0</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#42A4E0</span>,<span class="hljs-selector-id">#2E88C0</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#42A4E0</span>,<span class="hljs-selector-id">#2E88C0</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-pseudo">:hover</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#fefefe</span>,<span class="hljs-selector-id">#ebeced</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#ebeced</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#f2f3f7</span>,<span class="hljs-selector-id">#ebeced</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-pseudo">:hover</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#818181</span>,<span class="hljs-selector-id">#575757</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#818181</span>,<span class="hljs-selector-id">#575757</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#818181</span>,<span class="hljs-selector-id">#575757</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-pseudo">:hover</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#eb6f6f</span>,<span class="hljs-selector-id">#c83c3c</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#eb6f6f</span>,<span class="hljs-selector-id">#c83c3c</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#eb6f6f</span>,<span class="hljs-selector-id">#c83c3c</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-pseudo">:hover</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#ffd859</span>,<span class="hljs-selector-id">#e3bb38</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#ffd859</span>,<span class="hljs-selector-id">#e3bb38</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#ffd859</span>,<span class="hljs-selector-id">#e3bb38</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-pseudo">:hover</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#aaebb9</span>,<span class="hljs-selector-id">#82d392</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#aaebb9</span>,<span class="hljs-selector-id">#82d392</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#aaebb9</span>,<span class="hljs-selector-id">#82d392</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-pseudo">:hover</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#70bfef</span>,<span class="hljs-selector-id">#4097ce</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#70bfef</span>,<span class="hljs-selector-id">#4097ce</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#70bfef</span>,<span class="hljs-selector-id">#4097ce</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-pseudo">:active</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:1px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#a8abae</span> <span class="hljs-selector-tag">inset</span>,0 3<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-pseudo">:active</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:1px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#111</span> <span class="hljs-selector-tag">inset</span>,0 3<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#424242</span>,<span class="hljs-selector-id">#575757</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#424242</span>,<span class="hljs-selector-id">#575757</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#424242</span>,<span class="hljs-selector-id">#575757</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-pseudo">:active</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:1px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#5b0505</span> <span class="hljs-selector-tag">inset</span>,0 3<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#bf2626</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#bf2626</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#bf2626</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-pseudo">:active</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:1px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#816b1f</span> <span class="hljs-selector-tag">inset</span>,0 3<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-pseudo">:active</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:1px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#4d7254</span> <span class="hljs-selector-tag">inset</span>,0 3<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#5eac6e</span>,<span class="hljs-selector-id">#72b37e</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#5eac6e</span>,<span class="hljs-selector-id">#72b37e</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#5eac6e</span>,<span class="hljs-selector-id">#72b37e</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-pseudo">:active</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:1px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 3<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#114566</span> <span class="hljs-selector-tag">inset</span>,0 3<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#fff</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-webkit-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">-moz-linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span>: <span class="hljs-selector-tag">linear-gradient</span>(<span class="hljs-selector-tag">top</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#e7ebee</span>,<span class="hljs-selector-id">#f8f8f8</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#e7ebee</span>,<span class="hljs-selector-id">#f8f8f8</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#e7ebee</span>,<span class="hljs-selector-id">#f8f8f8</span> 60%);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#555</span>,<span class="hljs-selector-id">#6f6f6f</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#555</span>,<span class="hljs-selector-id">#6f6f6f</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#555</span>,<span class="hljs-selector-id">#6f6f6f</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#c43333</span>,<span class="hljs-selector-id">#dc4949</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#c43333</span>,<span class="hljs-selector-id">#dc4949</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#c43333</span>,<span class="hljs-selector-id">#dc4949</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#e1b21a</span>,<span class="hljs-selector-id">#fbc71d</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#e1b21a</span>,<span class="hljs-selector-id">#fbc71d</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#e1b21a</span>,<span class="hljs-selector-id">#fbc71d</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#85da95</span>,<span class="hljs-selector-id">#94e0a5</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#85da95</span>,<span class="hljs-selector-id">#94e0a5</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#85da95</span>,<span class="hljs-selector-id">#94e0a5</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#338fc8</span>,<span class="hljs-selector-id">#56b2eb</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#338fc8</span>,<span class="hljs-selector-id">#56b2eb</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#338fc8</span>,<span class="hljs-selector-id">#56b2eb</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">top</span><span class="hljs-selector-pseudo">:4px</span>;</span>
+<span class="css"><span class="hljs-selector-tag">border-top</span>: 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-tag">solid</span> <span class="hljs-selector-id">#9fa6ab</span>;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#a8abae</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#111</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#414040</span>,<span class="hljs-selector-id">#4d4c4c</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#414040</span>,<span class="hljs-selector-id">#4d4c4c</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#414040</span>,<span class="hljs-selector-id">#4d4c4c</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#4b0707</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#b11a1a</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#b11a1a</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#b11a1a</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#816b1f</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#33663d</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#63a870</span>,<span class="hljs-selector-id">#72b37e</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#63a870</span>,<span class="hljs-selector-id">#72b37e</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#63a870</span>,<span class="hljs-selector-id">#72b37e</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.side</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span><span class="hljs-selector-pseudo">:-1px</span> 0 1<span class="hljs-selector-tag">px</span> <span class="hljs-selector-id">#114566</span> <span class="hljs-selector-tag">inset</span>;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(right</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(right</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span> 60%);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(right</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span> 60%); </span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#fefefe</span>,<span class="hljs-selector-id">#ebeced</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#fefefe</span>,<span class="hljs-selector-id">#ebeced</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#fefefe</span>,<span class="hljs-selector-id">#ebeced</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#818181</span>,<span class="hljs-selector-id">#575757</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#818181</span>,<span class="hljs-selector-id">#575757</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#818181</span>,<span class="hljs-selector-id">#575757</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#eb6f6f</span>,<span class="hljs-selector-id">#c83c3c</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#eb6f6f</span>,<span class="hljs-selector-id">#c83c3c</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#eb6f6f</span>,<span class="hljs-selector-id">#c83c3c</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#ffd859</span>,<span class="hljs-selector-id">#e3bb38</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#ffd859</span>,<span class="hljs-selector-id">#e3bb38</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#ffd859</span>,<span class="hljs-selector-id">#e3bb38</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#aaebb9</span>,<span class="hljs-selector-id">#82d392</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#aaebb9</span>,<span class="hljs-selector-id">#82d392</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#aaebb9</span>,<span class="hljs-selector-id">#82d392</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#70bfef</span>,<span class="hljs-selector-id">#4097ce</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#70bfef</span>,<span class="hljs-selector-id">#4097ce</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#70bfef</span>,<span class="hljs-selector-id">#4097ce</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#e4e8ec</span>,<span class="hljs-selector-id">#e4e8ec</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#424242</span>,<span class="hljs-selector-id">#575757</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#424242</span>,<span class="hljs-selector-id">#575757</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#424242</span>,<span class="hljs-selector-id">#575757</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#bf2626</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#bf2626</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#b11a1a</span>,<span class="hljs-selector-id">#bf2626</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#d3a203</span>,<span class="hljs-selector-id">#dba907</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#63a870</span>,<span class="hljs-selector-id">#72b37e</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#63a870</span>,<span class="hljs-selector-id">#72b37e</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#63a870</span>,<span class="hljs-selector-id">#72b37e</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>,</span>
+<span class="css">	<span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-webkit-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:-moz-linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span>);</span>
+<span class="css"><span class="hljs-selector-tag">background</span><span class="hljs-selector-pseudo">:linear-gradient(top</span> <span class="hljs-selector-tag">left</span>,<span class="hljs-selector-id">#1a71a8</span>,<span class="hljs-selector-id">#1976b1</span>);</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#b7babd</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#b7babd</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.gray</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#b7babd</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#b7babd</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#333</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#333</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.black</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#333</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#333</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#640909</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#640909</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.red</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#640909</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#640909</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#816b1f</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#816b1f</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.yellow</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#816b1f</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#816b1f</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#4d7254</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#4d7254</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.green</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#4d7254</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#4d7254</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.rarrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 1<span class="hljs-selector-tag">px</span> 0 <span class="hljs-selector-id">#114566</span> <span class="hljs-selector-tag">inset</span>,<span class="hljs-selector-tag">-1px</span> 0 0 <span class="hljs-selector-id">#114566</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+<span class="css"><span class="hljs-selector-class">.blue</span><span class="hljs-selector-class">.larrow</span><span class="hljs-selector-pseudo">:active</span><span class="hljs-selector-pseudo">:after</span>&#123;</span>
+<span class="css"><span class="hljs-selector-tag">box-shadow</span>: 0 <span class="hljs-selector-tag">-1px</span> 0 <span class="hljs-selector-id">#114566</span> <span class="hljs-selector-tag">inset</span>,1<span class="hljs-selector-tag">px</span> 0 0 <span class="hljs-selector-id">#114566</span> <span class="hljs-selector-tag">inset</span>;</span>
+&#125;
+	<span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page"</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"header"</span>&gt;</span>
+		<span class="hljs-tag">&lt;<span class="hljs-name">hgrounp</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"white blank"</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>36个Web按钮集合<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+		<span class="hljs-tag">&lt;/<span class="hljs-name">hgrounp</span>&gt;</span>
+	<span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"demo"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"demo_con"</span>&gt;</span>
+ 
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button gray"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button black"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button red"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button yellow"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button green"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button blue"</span>&gt;</span>BUY NOW<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+ 
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button gray round"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button black round"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button red round"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button yellow round"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button green round"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button blue round"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+ 
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button gray side"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button black side"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button red side"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button yellow side"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button green side"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button blue side"</span>&gt;</span>DOWNLOAD<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+ 
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button gray tags"</span>&gt;</span>SIGN UP<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button black tags"</span>&gt;</span>SIGN UP<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button red tags"</span>&gt;</span>SIGN UP<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button yellow tags"</span>&gt;</span>SIGN UP<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button green tags"</span>&gt;</span>SIGN UP<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button blue tags"</span>&gt;</span>SIGN UP<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+ 
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button gray rarrow"</span>&gt;</span>LEARN MORE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button black rarrow"</span>&gt;</span>LEARN MORE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button red rarrow"</span>&gt;</span>LEARN MORE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button yellow rarrow"</span>&gt;</span>LEARN MORE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button green rarrow"</span>&gt;</span>LEARN MORE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button blue rarrow"</span>&gt;</span>LEARN MORE<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+ 
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button gray larrow"</span>&gt;</span>GO BACK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button black larrow"</span>&gt;</span>GO BACK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button red larrow"</span>&gt;</span>GO BACK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button yellow larrow"</span>&gt;</span>GO BACK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button green larrow"</span>&gt;</span>GO BACK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button blue larrow"</span>&gt;</span>GO BACK<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>	
+	<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span></code></pre></div>
+
+<span class="label label-primary">又成功水一篇，哈哈</span>
+
+<p align="right"> <a href="/liuyan/">来自网络，侵删</a></p>
+            </article>
+            
+              <p class="note note-warning">本文作者：知否_Darren<br>本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/HTML/">HTML</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/HTML/">HTML</a>
+                    
+                  </div>
+                
+              </div>
+
+              
+              <div>
+                <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+                <div></div>
+                <button class="button green round" id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+                  <span>关注 Clover</span>
+                </button>
+                <div id="QR" style="display: none;">
+              
+                  
+                    <div id="wechat" style="display: inline-block" class="col-12 col-md-4 m-auto index-img">
+                      <br>
+                      <a href="/img/douyin.png" rel="group"><img id="wechat_qr" src="/img/douyin.png" srcset="/img/loading.gif" alt="clover 抖音"></a>
+                      <br><p>clover</p>
+                    </div>                 
+              
+                </div>
+                </div>
+        
+              </div>
+
+
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/2020/04/24/C%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/">
+                        <span class="hidden-mobile">C语言学习笔记（一）</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <div class="comments" id="comments">
+                <p class="note note-info">本站支持评论邮件提醒功能，在邮箱输入框中留下你的邮箱，这样就能通过邮件收到回复！</p>
+                
+                
+  <div id="vcomments"></div>
+  <script defer src="https://cdn.staticfile.org/valine/1.4.5/Valine.min.js" ></script>
+
+  <script type="text/javascript">
+    var oldLoadVa = window.onload;
+    window.onload = function () {
+      oldLoadVa && oldLoadVa();
+
+      new Valine({
+        el: "#vcomments",
+        app_id: "7YiYmggzx9dypQiNenXRX7oJ-gzGzoHsz",
+        app_key: "H1OjeqhzsqDE0yTqBbFHP2rU",
+        placeholder: "1.填写邮箱，评论收到回复后会有邮件提醒！   2.在昵称框中输入 QQ 号可自动识别头像和昵称哦！",
+        path: window.location.pathname,
+        avatar: "retro",
+        meta: ["nick","mail","link"],
+        pageSize: "10",
+        lang: "zh-CN",
+        highlight: true,
+        recordIP: true,
+        serverURLs: "",
+        mathJax: false
+      });
+    };
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://valine.js.org" target="_blank" rel="nofollow noopener noopener">comments
+      powered by Valine.</a></noscript>
+
+
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a class="qr-trigger" target="_blank" rel="nofollow noopener"><span>©2020 Darren</span>
+        <img class="qr-img" src="/img/douyin.png" srcset="/img/favicon.png" alt="qrcode">
+      </a>
+      <i class="iconfont icon-love"></i>
+      <a class="qr-trigger" target="_blank" rel="nofollow noopener"><span>Clover</span>
+        <img class="qr-img" src="/img/douyin.png" srcset="/img/favicon.png" alt="qrcode">
+      </a>
+      <b> | </b>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+      <b> & </b>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><b>Fluid </b></a>
+
+    </div>
+
+    <div title="MySSL 安全签章" id="myssl_seal" onclick="window.open('https://myssl.com/seal/detail?domain=darrenclover.gitee.io','MySSL安全签章','height=800,width=470,top=0,right=0,toolbar=no,menubar=no,scrollbars=no,resizable=no,location=no,status=no')" style="text-align: center">
+      <img src="https://static.myssl.com/res/images/myssl-id1.png" srcset="https://sealres.myssl.com/seal/img/1x/seal.svg?domain=darrenclover.gitee.io" alt="MySSL 安全签章" style="width: 3rem; height: auto; cursor: pointer">
+    </div>
+    
+
+    
+      <!-- cnzz Analytics Icon -->
+      <span id="cnzz_stat_icon_1278828544" style="display: none"></span>
+    
+  </div>
+  
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/main.js" ></script>
+
+
+  <script  src="/js/lazyload.js" ></script>
+
+
+
+  
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '.post-content',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <!-- cnzz Analytics -->
+    <script defer src="//s4.cnzz.com/z_stat.php?id=1278828544&show=pic"
+            type="text/javascript"></script>
+  
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "36个的web button 样式&nbsp;",
+      ],
+      cursorChar: "☆",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+      icon: "☆"
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
