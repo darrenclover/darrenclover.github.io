@@ -165,7 +165,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    495 字
+                    500 字
                   </span>
                 
 
@@ -175,7 +175,7 @@
                       <i class="iconfont icon-clock-fill"></i>
                     
                     
-                    59
+                    60
                      分钟
                   </span>
                 
@@ -885,7 +885,7 @@
           <div class="post-content mx-auto" id="post">
             
               <p class="note note-warning">
-                本文最后更新于：星期一, 四月 27日 2020, 12:42 凌晨
+                本文最后更新于：星期一, 四月 27日 2020, 12:46 凌晨
               </p>
             
             <article class="markdown-body">
@@ -894,6 +894,8 @@
 <p>当然，hexo为我们提供了可使用的插件hexo-abbrlink，但是我在安装后无法正常使用，出现所有文章的链接全部指向同一个路径undefined/xxxx.html的问题</p>
 <p>虽然后来发现了问题所在，但是我已经使用本文方法对链接做了优化，并且认为此方法优于hexo-addrlink，hexo-addrlink插件虽然可以给每一篇文章通过文章标题（hexo中文章标题是不能重复的）生成唯一的编码，来实现链接唯一化。但是还是觉得这个插件生成的唯一代码太长了，也没有逻辑，我还是希望能够用时间和日期作为唯一链接。通过百度和谷歌后，找到了一个大神的解决方法，下面分享出来。</p>
 <p>具体原理略过吧，直接上步骤123了</p>
+<p>放个效果图</p>
+<p><img src="/img/demo/duanlianjie.jpg" srcset="/img/loading.gif" alt=""></p>
 <h3 id="1-新建js文件"><a href="#1-新建js文件" class="headerlink" title="1. 新建js文件"></a>1. 新建js文件</h3><p>在 <strong>主题文件夹/scripts/</strong>路径下，新建 datelink.js 吧，名字随意，我懒我就没改哈哈。</p>
 <p>datelink.js内容如下</p>
 <div class="hljs"><pre><code class="hljs java"><span class="hljs-string">'use strict'</span>;
