@@ -19,7 +19,7 @@
   <meta name="description" content="分享技术，分享生活">
   <meta name="author" content="Darren">
   <meta name="keywords" content="python,C/C++,图像处理，人工智能，目标检测，目标识别">
-  <title>如何科学冲浪 - 知否_Darren ’s blog</title>
+  <title>Hexo博客进阶——自定义文章页永久链接（短链接） - 知否_Darren ’s blog</title>
   
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
@@ -141,7 +141,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/xiaofeiji.jpg') no-repeat center center;
+         style="background: url('/img/demo/duanlianjie.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -154,8 +154,8 @@
               
                 <div class="mt-3 post-meta">
                   <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-                  <time datetime="2020-04-19 14:46">
-                    星期日, 四月 19日 2020, 2:46 下午
+                  <time datetime="2020-04-27 00:02">
+                    星期一, 四月 27日 2020, 12:02 凌晨
                   </time>
                 </div>
               
@@ -165,7 +165,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    553 字
+                    495 字
                   </span>
                 
 
@@ -175,7 +175,7 @@
                       <i class="iconfont icon-clock-fill"></i>
                     
                     
-                    61
+                    59
                      分钟
                   </span>
                 
@@ -858,7 +858,7 @@
                }
                return out;
            }
-           content = utf16to8('https://darrenclover.gitee.io/posts/2020/04/20200419024623.html');
+           content = utf16to8('https://darrenclover.gitee.io/posts/2020/04/20200427120229.html');
            $('#output').qrcode({
                width: 110,
                height: 110,
@@ -885,62 +885,46 @@
           <div class="post-content mx-auto" id="post">
             
               <p class="note note-warning">
-                本文最后更新于：星期日, 四月 26日 2020, 11:18 晚上
+                本文最后更新于：星期一, 四月 27日 2020, 12:42 凌晨
               </p>
             
             <article class="markdown-body">
-              <h1 id="优雅的冲浪"><a href="#优雅的冲浪" class="headerlink" title="优雅的冲浪"></a>优雅的冲浪</h1><p><strong>访问github很慢？找不到想找的文献？google上不去？此文帮你解决！</strong></p>
-<h2 id="1-客户端下载"><a href="#1-客户端下载" class="headerlink" title="1. 客户端下载"></a>1. 客户端下载</h2><ol>
-<li><p>Windows客户端下载地址：<a href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases" target="_blank" rel="noopener">https://github.com/shadowsocksrr/shadowsocksr-csharp/releases</a></p>
-</li>
-<li><p>Mac客户端下载地址：<a href="https://github.com/qinyuhang/ShadowsocksX-NG-R/releases" target="_blank" rel="noopener">https://github.com/qinyuhang/ShadowsocksX-NG-R/releases</a></p>
-</li>
-<li><p><del>Linux客户端下载地址：<a href="https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation。" target="_blank" rel="noopener">https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation。</a></del>（404）</p>
-</li>
-<li><p>Android/安卓客户端下载地址：<a href="https://github.com/shadowsocksrr/shadowsocksr-android/releases" target="_blank" rel="noopener">https://github.com/shadowsocksrr/shadowsocksr-android/releases</a></p>
-</li>
-<li><p>iOS/苹果客户端直接在App Store里可以下载，但是需要配合国外id，方法比较繁琐，另附一篇专门讲述。<a href="/posts/2020/04/20200419090736.html">点我移步</a></p>
-</li>
-</ol>
-<h2 id="2-使用方法（以windows为例）"><a href="#2-使用方法（以windows为例）" class="headerlink" title="2. 使用方法（以windows为例）"></a>2. 使用方法（以windows为例）</h2><p>windows较为常用，所以就以windows为例来说吧，其他的大同小异啦！</p>
-<ol>
-<li>点开上述windows下载地址后，下载所需版本的压缩包，哪个版本都行啦！</li>
-</ol>
-<p><img src="/img/ssr-git.jpg" srcset="/img/loading.gif" alt=""></p>
-<ol start="2">
-<li>下载解压后得到如下文件夹</li>
-</ol>
-<p><img src="/img/ssr-xiazai.jpg" srcset="/img/loading.gif" alt=""></p>
-<ol start="3">
-<li>打开哪个都ok（直接双击打开就行）</li>
-</ol>
-<p><img src="/img/ssr-dakai.jpg" srcset="/img/loading.gif" alt=""></p>
-<h2 id="3-获取免费节点，配置节点信息"><a href="#3-获取免费节点，配置节点信息" class="headerlink" title="3. 获取免费节点，配置节点信息"></a>3. 获取免费节点，配置节点信息</h2><ol>
-<li><p>双击打开后，在任务栏右下角可见一个绿色的小飞机（或者是其他颜色的），此时我们需要免费的节点。</p>
-<blockquote>
-<p>获取免费节点</p>
-<blockquote>
-<p><a href="/posts/2020/04/20200419112558.html">免费节点</a>持续佛系更新！（催更请留言或联系博主微信，当然是直接联系微信更加快速！）</p>
-</blockquote>
-</blockquote>
-</li>
-<li><p>找到以ssr开头的节点（其他字母开头的节点用于其他软件，我们下载的ssr就用ssr开头的节点信息），选中全部，右击复制（一定要选全，不要丢字）</p>
-</li>
-</ol>
-<p><img src="/img/ssr-jiedian.jpg" srcset="/img/loading.gif" alt=""></p>
-<ol start="3">
-<li>将节点信息复制后，右击任务栏右下角的小飞机，选择剪切板导入</li>
-</ol>
-<p><img src="/img/ssr-youji.jpg" srcset="/img/loading.gif" alt=""></p>
-<ol start="4">
-<li>此时，节点信息已经导入完毕，接下来，右击小飞机，启用刚刚导入的节点</li>
-</ol>
-<p>系统代理模式&gt;pac模式</p>
-<p>代理规则&gt;全局</p>
-<p>服务器&gt;选择你刚刚添加的节点</p>
-<p><img src="/img/ssr-qiyongjiedian.jpg" srcset="/img/loading.gif" alt=""></p>
-<p>接下来就让我们起飞吧！愉快的访问google、github……</p>
-<p><strong>网络不是法外之地，请自觉维护网络文明</strong><br><strong>不用了记得关掉，虽然免费，但是要懂得爱惜，不要浪费资源</strong><br><strong>如若节点获取方法失效，请在底部留言或联系博主微信（微信见关于页面）</strong></p>
+              <h2 id="Hexo-自定义文章链接"><a href="#Hexo-自定义文章链接" class="headerlink" title="Hexo 自定义文章链接"></a>Hexo 自定义文章链接</h2><p><strong>我们在访问文章页面时，会发现默认的文章链接相当的长</strong></p>
+<p>尤其是当链接中包含中文时，会出现很多转义字符，不便于我们把写好的文章分享给别人</p>
+<p>当然，hexo为我们提供了可使用的插件hexo-abbrlink，但是我在安装后无法正常使用，出现所有文章的链接全部指向同一个路径undefined/xxxx.html的问题</p>
+<p>虽然后来发现了问题所在，但是我已经使用本文方法对链接做了优化，并且认为此方法优于hexo-addrlink，hexo-addrlink插件虽然可以给每一篇文章通过文章标题（hexo中文章标题是不能重复的）生成唯一的编码，来实现链接唯一化。但是还是觉得这个插件生成的唯一代码太长了，也没有逻辑，我还是希望能够用时间和日期作为唯一链接。通过百度和谷歌后，找到了一个大神的解决方法，下面分享出来。</p>
+<p>具体原理略过吧，直接上步骤123了</p>
+<h3 id="1-新建js文件"><a href="#1-新建js文件" class="headerlink" title="1. 新建js文件"></a>1. 新建js文件</h3><p>在 <strong>主题文件夹/scripts/</strong>路径下，新建 datelink.js 吧，名字随意，我懒我就没改哈哈。</p>
+<p>datelink.js内容如下</p>
+<div class="hljs"><pre><code class="hljs java"><span class="hljs-string">'use strict'</span>;
+<span class="hljs-keyword">var</span> hexo = hexo || &#123;&#125;;
+hexo.extend.filter.register(<span class="hljs-string">'before_post_render'</span>,function(data)
+&#123;
+    <span class="hljs-keyword">var</span> log = <span class="hljs-keyword">this</span>.log;
+    <span class="hljs-keyword">if</span> (data.layout == <span class="hljs-string">'post'</span>) 
+    &#123;
+        let datelink
+        <span class="hljs-keyword">if</span> (!datelink) 
+        &#123;
+            <span class="hljs-keyword">var</span> getdate = data.date;
+            <span class="hljs-comment">//log.i("get date [%s]", getdate.format('YYYYMMDDhhmmss'));</span>
+            data.datelink = getdate.format(<span class="hljs-string">'YYYYMMDDhhmmss'</span>);
+        &#125;
+    &#125;
+    <span class="hljs-keyword">return</span> data
+&#125;,<span class="hljs-number">15</span>);</code></pre></div>
+
+<h3 id="2-修改HEXO配置文件-config-yml"><a href="#2-修改HEXO配置文件-config-yml" class="headerlink" title="2. 修改HEXO配置文件 _config.yml"></a>2. 修改HEXO配置文件 _config.yml</h3><p>注意这个是hexo的配置文件，不是主题的配置文件</p>
+<div class="hljs"><pre><code class="hljs yml"><span class="hljs-attr">permalink:</span> <span class="hljs-string">posts/:year/:month/:datelink.html</span>
+<span class="hljs-attr">permalink_defaults:</span>
+<span class="hljs-attr">datelink:</span></code></pre></div>
+<p>注意这并不是链接最短的形式，如果你想使更短可以这么写</p>
+<div class="hljs"><pre><code class="hljs yml"><span class="hljs-attr">permalink:</span> <span class="hljs-string">:datelink.html</span>
+<span class="hljs-attr">permalink_defaults:</span>
+<span class="hljs-attr">datelink:</span></code></pre></div>
+
+<p>具体想让链接什么格式，自行修改<code>permalink:</code>就好，这才叫自定义，哈哈</p>
+<h3 id="3-hexo三连"><a href="#3-hexo三连" class="headerlink" title="3. hexo三连"></a>3. hexo三连</h3><p>接下来<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code>就好啦</p>
 
             </article>
             <!--
@@ -953,7 +937,7 @@
                 <!-- 若要指定作者及链接，在front-matter中更换即可 -->
 <p class="note note-warning">
 	本文作者：<a href='https://darrenclover.gitee.io'>Darren</a><br/>
-	本文地址：<a href='https://darrenclover.gitee.io/posts/2020/04/20200419024623.html'>https://darrenclover.gitee.io/posts/2020/04/20200419024623.html</a><br/>
+	本文地址：<a href='https://darrenclover.gitee.io/posts/2020/04/20200427120229.html'>https://darrenclover.gitee.io/posts/2020/04/20200427120229.html</a><br/>
 	
 		本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！
 	
@@ -968,7 +952,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%B2%E6%B5%AA/">优雅的冲浪</a>
+                      <a class="hover-with-bg" href="/categories/Hexo%E7%9F%AD%E9%93%BE%E6%8E%A5/">Hexo短链接</a>
                     
                   </div>
                 
@@ -976,7 +960,11 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%B2%E6%B5%AA/">优雅的冲浪</a>
+                      <a class="hover-with-bg" href="/tags/Hexo%E7%9F%AD%E9%93%BE%E6%8E%A5/">Hexo短链接</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5/">自定义文章链接</a>
+                    
+                      <a class="hover-with-bg" href="/tags/hexo-abbrlink/">hexo-abbrlink</a>
                     
                   </div>
                 
@@ -1009,18 +997,12 @@
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/posts/2020/04/20200419090736.html">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">ios/苹果移动设备下载ssr方法</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
                     
-                      <a href="/posts/2020/04/20200419102417.html">
-                        <span class="hidden-mobile">hello clover</span>
+                      <a href="/posts/2020/04/20200425051754.html">
+                        <span class="hidden-mobile">36个的web button 样式</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -1230,7 +1212,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "如何科学冲浪&nbsp;",
+        "Hexo博客进阶——自定义文章页永久链接（短链接）&nbsp;",
       ],
       cursorChar: "☆",
       typeSpeed: 70,
