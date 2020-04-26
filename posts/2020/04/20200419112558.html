@@ -19,7 +19,7 @@
   <meta name="description" content="分享技术，分享生活">
   <meta name="author" content="Darren">
   <meta name="keywords" content="python,C/C++,图像处理，人工智能，目标检测，目标识别">
-  <title>C语言学习笔记（一） - 知否_Darren ’s blog</title>
+  <title>免费节点（持续更新） - 知否_Darren ’s blog</title>
   
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
@@ -141,7 +141,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/C/cover.jpg') no-repeat center center;
+         style="background: url('/img/ssr.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -154,8 +154,8 @@
               
                 <div class="mt-3 post-meta">
                   <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-                  <time datetime="2020-04-24 20:32">
-                    星期五, 四月 24日 2020, 8:32 晚上
+                  <time datetime="2020-04-19 23:25">
+                    星期日, 四月 19日 2020, 11:25 晚上
                   </time>
                 </div>
               
@@ -165,7 +165,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    2k 字
+                    208 字
                   </span>
                 
 
@@ -175,7 +175,7 @@
                       <i class="iconfont icon-clock-fill"></i>
                     
                     
-                    287
+                    30
                      分钟
                   </span>
                 
@@ -837,337 +837,83 @@
           <div class="post-content mx-auto" id="post">
             
               <p class="note note-warning">
-                本文最后更新于：星期六, 四月 25日 2020, 10:03 上午
+                本文最后更新于：星期日, 四月 26日 2020, 11:59 中午
               </p>
             
             <article class="markdown-body">
-              <h2 id="0-前言"><a href="#0-前言" class="headerlink" title="0 前言"></a>0 前言</h2><p>絮叨絮叨，回想一下自上大学至今，已经学习计算机6年了，自己竟然没有很好的掌握住一门语言；隧近期准备重拾C，把学习过程中的笔记分享出来，也方便自己日后查看，下面开始保姆式学习。</p>
-<blockquote>
-<p>代码都是在VS2019中敲的</p>
+              <h1 id="免费节点（持续更新）"><a href="#免费节点（持续更新）" class="headerlink" title="免费节点（持续更新）"></a>免费节点（持续更新）</h1><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><p>请移步 → <a href="/posts/2020/04/20200419024623.html">如何优雅的冲浪</a> 或者 <a href="/posts/2020/04/20200419090736.html">ios移动设备优雅的冲浪</a></p>
+<h2 id="4-26"><a href="#4-26" class="headerlink" title="4.26"></a>4.26</h2><blockquote>
+<p>催更请留言或联系博主微信，当然是联系微信更加迅速！（微信请见关于页面）</p>
 </blockquote>
 <blockquote>
-<p><a href="https://visualstudio.microsoft.com/zh-hans/thank-you-downloading-visual-studio/?sku=Community&rel=16" target="_blank">VS2019</a>下载，安装之前需要安装<a href="https://dotnet.microsoft.com/download/dotnet-framework/thank-you/net48-web-installer" target="_blank" rel="noopener">.NET Framework 4.8</a>，安装没什么特殊要求，正常安装就好了。</p>
+<p>仅限用于学术查询与游戏使用，禁止一切非法活动，否则后果自负，请大家自行遵守相关的网络法规，文明上网，健康上网</p>
 </blockquote>
-<h1 id="1-主函数"><a href="#1-主函数" class="headerlink" title="1 主函数"></a>1 主函数</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+<h2 id="ssr"><a href="#ssr" class="headerlink" title="ssr"></a>ssr</h2><p>ssr://bmw3LmJvb20ucGFydHk6MTcwMDA6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpodHRwX3NpbXBsZTpWV3M1TWtOVC8_cmVtYXJrcz00NENRVkhWdWJtVnNYMHpqZ0pIbWxyRGxpcURsbmFFZ0lGWkpVRGNnTFNCT1pYUm1iR2w0JnByb3RvcGFyYW09TVRZek9UYzNPbWRCU0dSV2RBJm9iZnNwYXJhbT0</p>
+<p>ssr://anAxLmt2bXN1Yi54eXo6MzIzNjY6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpwbGFpbjpNa3htT1hRei8_b2Jmc3BhcmFtPU9EUXpORGt4TmpNMk56a3ViV2xqY205emIyWjBMbU52YlEmcHJvdG9wYXJhbT1NVFl6TmpjNU9taHROVFJ0YUEmcmVtYXJrcz01cGVsNXB5c0lFcFFNZVM0bk9TNnJDRGxoWTNvdExrZ0xTQXpNak0yTmlEbGpaWG5xNl9sajZNJmdyb3VwPTU2ZVI1YTJtNUxxUjVZcWc2WUNm</p>
+<p>ssr://anAyLmt2bXN1Yi54eXo6MzIzNjY6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpwbGFpbjpNa3htT1hRei8_b2Jmc3BhcmFtPU9EUXpORGt4TmpNMk56a3ViV2xqY205emIyWjBMbU52YlEmcHJvdG9wYXJhbT1NVFl6TmpjNU9taHROVFJ0YUEmcmVtYXJrcz01cGVsNXB5c0lFcFFNaURrdUp6a3Vxd2c1WVdONkxTNUlDMGdNekl6TmpZZzVZMlY1NnV2NVktaiZncm91cD01NmVSNWEybTVMcVI1WXFnNllDZg</p>
+<p>ssr://anAzLmt2bXN1Yi54eXo6MzIzNjY6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpwbGFpbjpNa3htT1hRei8_b2Jmc3BhcmFtPU9EUXpORGt4TmpNMk56a3ViV2xqY205emIyWjBMbU52YlEmcHJvdG9wYXJhbT1NVFl6TmpjNU9taHROVFJ0YUEmcmVtYXJrcz01cGVsNXB5c0lFcFFNeURrdUp6a3Vxd2c1WVdONkxTNUlDMGdNekl6TmpZZzVZMlY1NnV2NVktaiZncm91cD01NmVSNWEybTVMcVI1WXFnNllDZg</p>
+<p>ssr://anA0Lmt2bXN1Yi54eXo6MzIzNjY6YXV0aF9hZXMxMjhfc2hhMTphZXMtMjU2LWNmYjpwbGFpbjpNa3htT1hRei8_b2Jmc3BhcmFtPU9EUXpORGt4TmpNMk56a3ViV2xqY205emIyWjBMbU52YlEmcHJvdG9wYXJhbT1NVFl6TmpjNU9taHROVFJ0YUEmcmVtYXJrcz01cGVsNXB5c0lFcFFOQ0RrdUp6a3Vxd2c1WVdONkxTNUlDMGdNekl6TmpZZzVZMlY1NnV2NVktaiZncm91cD01NmVSNWEybTVMcVI1WXFnNllDZg</p>
+<p>ssr://Mi41Ni4yNDAuMTE0OjE5OTk5OmF1dGhfYWVzMTI4X3NoYTE6cmM0LW1kNTp0bHMxLjJfdGlja2V0X2F1dGg6T1RFNC8_b2Jmc3BhcmFtPU9EQTJPRGM1TWpnNU15NXRhV055YjNOdlpuUXVZMjl0JnByb3RvcGFyYW09T1RJNE9UTTZiRmRRZVVaTiZyZW1hcmtzPTVZV042TFM1TGVTX2hPZTlsLWFXcnpNd01TQXRJREU1T1RrNUlPV05sZWVyci1XUG93Jmdyb3VwPTZZVzM2Ym13TmpZMg</p>
+<p>ssr://aGt0MDIteXktdHRnYmMueW91eXVuNjY2Lm9yZzozNDU2NzphdXRoX2FlczEyOF9tZDU6Y2hhY2hhMjA6dGxzMS4yX3RpY2tldF9hdXRoOlNsaHdXbkJ4Lz9vYmZzcGFyYW09WlRrek9HSXlPVGsxT0M1dGFXTnliM052Wm5RdVkyOXQmcHJvdG9wYXJhbT1Nams1TlRnNk5EUmhkWGRuJnJlbWFya3M9NVlXTjZMUzVMZW1tbWVhNHJ6azEmZ3JvdXA9NUx5WTVMcVJOalky</p>
+<p>ssr://aGt0MDMteXktdHRnYmMueW91eXVuNjY2Lm9yZzoxOTk5OTphdXRoX2FlczEyOF9tZDU6Y2hhY2hhMjA6dGxzMS4yX3RpY2tldF9hdXRoOlNsaHdXbkJ4Lz9vYmZzcGFyYW09WlRrek9HSXlPVGsxT0M1dGFXTnliM052Wm5RdVkyOXQmcHJvdG9wYXJhbT1Nams1TlRnNk5EUmhkWGRuJnJlbWFya3M9NVlXTjZMUzVMZW1tbWVhNHJ6azImZ3JvdXA9NUx5WTVMcVJOalky</p>
+<p>ssr://NDUuNzcuMjU0LjIwMTo1NDMyMTphdXRoX2FlczEyOF9zaGExOnJjNC1tZDU6dGxzMS4yX3RpY2tldF9hdXRoOk9URTQvP29iZnNwYXJhbT1PREEyT0RjNU1qZzVNeTV0YVdOeWIzTnZablF1WTI5dCZwcm90b3BhcmFtPU9USTRPVE02YkZkUWVVWk4mcmVtYXJrcz01WVdONkxTNUxlYVdzT1dLb09XZG9USTRPQ0F0SURVME16SXhJT1dObGVlcnItV1BvdyZncm91cD02WVczNmJtd05qWTI</p>
+<p>ssr://MTM5LjE4MC4xNTYuOTU6MTk5OTk6YXV0aF9hZXMxMjhfc2hhMTpyYzQtbWQ1OnRsczEuMl90aWNrZXRfYXV0aDpPVEU0Lz9vYmZzcGFyYW09T0RBMk9EYzVNamc1TXk1dGFXTnliM052Wm5RdVkyOXQmcHJvdG9wYXJhbT1PVEk0T1RNNmJGZFFlVVpOJnJlbWFya3M9NVlXTjZMUzVMZWFXc09XS29PV2RvVEk1TVNBdElERTVPVGs1SU9XTmxlZXJyLVdQb3cmZ3JvdXA9NllXMzZibXdOalky</p>
+<p>ssr://aGsuZnJlZS0xLmhrdC5zeTE2OC5zcGFjZToxMDk3MTphdXRoX2FlczEyOF9tZDU6Y2hhY2hhMjAtaWV0Zjp0bHMxLjJfdGlja2V0X2F1dGg6UTNOcmR6WmsvP29iZnNwYXJhbT1OR1l6TkRrNE5EZzJMbTFwWTNKdmMyOW1kQzVqYjIwJnByb3RvcGFyYW09T0RRNE5qcFRaVTFNWjNZJnJlbWFya3M9V0dsWWFTN3BwcG5tdUtfbGhZM290TGt3TVNBdElERXdPVGN4SU9XTmxlZXJyLVdQb3cmZ3JvdXA9V0dsWWFXTmhkSE0</p>
+<p>ssr://aGsuZnJlZS0xLmhrdC5zeTE2OC5zcGFjZToxMDk3MjphdXRoX2FlczEyOF9tZDU6Y2hhY2hhMjAtaWV0Zjp0bHMxLjJfdGlja2V0X2F1dGg6UTNOcmR6WmsvP29iZnNwYXJhbT1OR1l6TkRrNE5EZzJMbTFwWTNKdmMyOW1kQzVqYjIwJnByb3RvcGFyYW09T0RRNE5qcFRaVTFNWjNZJnJlbWFya3M9V0dsWWFTN3BwcG5tdUtfbGhZM290TGt3TWlBdElERXdPVGN5SU9XTmxlZXJyLVdQb3cmZ3JvdXA9V0dsWWFXTmhkSE0</p>
+<p>ssr://aGsuZnJlZS0xLmhrdC5zeTE2OC5zcGFjZToxMDk3MzphdXRoX2FlczEyOF9tZDU6Y2hhY2hhMjAtaWV0Zjp0bHMxLjJfdGlja2V0X2F1dGg6UTNOcmR6WmsvP29iZnNwYXJhbT1OR1l6TkRrNE5EZzJMbTFwWTNKdmMyOW1kQzVqYjIwJnByb3RvcGFyYW09T0RRNE5qcFRaVTFNWjNZJnJlbWFya3M9V0dsWWFTN3BwcG5tdUtfbGhZM290TGt3TXlBdElERXdPVGN6SU9XTmxlZXJyLVdQb3cmZ3JvdXA9V0dsWWFXTmhkSE0</p>
+<p>ssr://aGsuZnJlZS0xLmhrdC5zeTE2OC5zcGFjZToxMDk3NDphdXRoX2FlczEyOF9tZDU6Y2hhY2hhMjAtaWV0Zjp0bHMxLjJfdGlja2V0X2F1dGg6UTNOcmR6WmsvP29iZnNwYXJhbT1OR1l6TkRrNE5EZzJMbTFwWTNKdmMyOW1kQzVqYjIwJnByb3RvcGFyYW09T0RRNE5qcFRaVTFNWjNZJnJlbWFya3M9V0dsWWFTN3BwcG5tdUtfbGhZM290TGt3TkNBdElERXdPVGMwSU9XTmxlZXJyLVdQb3cmZ3JvdXA9V0dsWWFXTmhkSE0</p>
+<h2 id="vmess"><a href="#vmess" class="headerlink" title="vmess"></a>vmess</h2><p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMSIsDQogICJhZGQiOiAiczcyLndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzNzIud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMiIsDQogICJhZGQiOiAiczc4Lndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzNzgud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMyIsDQogICJhZGQiOiAiczg4Lndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzODgud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzNCIsDQogICJhZGQiOiAiczkwLndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzOTAud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzNSIsDQogICJhZGQiOiAiczcwLndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzNzAud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzNiIsDQogICJhZGQiOiAiczcxLndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzNzEud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzNyIsDQogICJhZGQiOiAiczUxLndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzNTEud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzOCIsDQogICJhZGQiOiAiczU4Lndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzNTgud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzOSIsDQogICJhZGQiOiAiczgwLndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJzODAud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTAiLA0KICAiYWRkIjogInM5Ny53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczk3Lndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTEiLA0KICAiYWRkIjogInMzMy53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczMzLndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTIiLA0KICAiYWRkIjogInM2My53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczYzLndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTMiLA0KICAiYWRkIjogInMxMTYud2V3YWxsLnRvcCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIzNWM0ZWMxZi0xYzMxLTMzMTktOTM1My1hZjZlZGZlYzE3MDIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInMxMTYud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTQiLA0KICAiYWRkIjogInM4Mi53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczgyLndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTUiLA0KICAiYWRkIjogInM4My53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczgzLndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTYiLA0KICAiYWRkIjogInM4NS53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczg1Lndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTciLA0KICAiYWRkIjogInMzNS53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczM1Lndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTgiLA0KICAiYWRkIjogInMxMzkud2V3YWxsLnRvcCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIzNWM0ZWMxZi0xYzMxLTMzMTktOTM1My1hZjZlZGZlYzE3MDIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInMxMzkud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMTkiLA0KICAiYWRkIjogIndoczY1Lndld2FsbC50b3AiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiMzVjNGVjMWYtMWMzMS0zMzE5LTkzNTMtYWY2ZWRmZWMxNzAyIiwNCiAgImFpZCI6ICIxIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogIm5vbmUiLA0KICAiaG9zdCI6ICJ3aHM2NS53ZXdhbGwudG9wIiwNCiAgInBhdGgiOiAiL3BhbmVsIiwNCiAgInRscyI6ICJ0bHMiDQp9</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjAiLA0KICAiYWRkIjogInM5My53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczkzLndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjEiLA0KICAiYWRkIjogInMxMjYud2V3YWxsLnRvcCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIzNWM0ZWMxZi0xYzMxLTMzMTktOTM1My1hZjZlZGZlYzE3MDIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInMxMjYud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjIiLA0KICAiYWRkIjogInMxMzIud2V3YWxsLnRvcCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIzNWM0ZWMxZi0xYzMxLTMzMTktOTM1My1hZjZlZGZlYzE3MDIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInMxMzIud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjMiLA0KICAiYWRkIjogInM3OS53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczc5Lndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjQiLA0KICAiYWRkIjogInM4NC53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczg0Lndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjUiLA0KICAiYWRkIjogInMxNDUud2V3YWxsLnRvcCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIzNWM0ZWMxZi0xYzMxLTMzMTktOTM1My1hZjZlZGZlYzE3MDIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInMxNDUud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjYiLA0KICAiYWRkIjogImNmLmNmY24ueHl6IiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczEwMy53ZXdhbGwudG9wIiwNCiAgInBhdGgiOiAiL3BhbmVsIiwNCiAgInRscyI6ICJ0bHMiDQp9</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjciLA0KICAiYWRkIjogInMxNjEud2V3YWxsLnRvcCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIzNWM0ZWMxZi0xYzMxLTMzMTktOTM1My1hZjZlZGZlYzE3MDIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInMxNjEud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjgiLA0KICAiYWRkIjogImdhZ2FzMTgud2V3YWxsLnRvcCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIzNWM0ZWMxZi0xYzMxLTMzMTktOTM1My1hZjZlZGZlYzE3MDIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogImdhZ2FzMTgud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMjkiLA0KICAiYWRkIjogInMzNy53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczM3Lndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMzAiLA0KICAiYWRkIjogInM5Mi53ZXdhbGwudG9wIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjM1YzRlYzFmLTFjMzEtMzMxOS05MzUzLWFmNmVkZmVjMTcwMiIsDQogICJhaWQiOiAiMSIsDQogICJuZXQiOiAid3MiLA0KICAidHlwZSI6ICJub25lIiwNCiAgImhvc3QiOiAiczkyLndld2FsbC50b3AiLA0KICAicGF0aCI6ICIvcGFuZWwiLA0KICAidGxzIjogInRscyINCn0=</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMzEiLA0KICAiYWRkIjogInMxMTkud2V3YWxsLnRvcCIsDQogICJwb3J0IjogIjQ0MyIsDQogICJpZCI6ICIzNWM0ZWMxZi0xYzMxLTMzMTktOTM1My1hZjZlZGZlYzE3MDIiLA0KICAiYWlkIjogIjEiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogInMxMTkud2V3YWxsLnRvcCIsDQogICJwYXRoIjogIi9wYW5lbCIsDQogICJ0bHMiOiAidGxzIg0KfQ==</p>
+<p>vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogInZtZXNzMzIiLA0KICAiYWRkIjogIm1nYS5jZW50b3M4LmNsb3VkIiwNCiAgInBvcnQiOiAiNDQzIiwNCiAgImlkIjogIjliZjBiMmExLWY4OTAtM2Q3OS1iYTBiLTBhYTM1YTA0ZDhkNSIsDQogICJhaWQiOiAiMTYiLA0KICAibmV0IjogIndzIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIm1nYS5jZW50b3M4LmNsb3VkIiwNCiAgInBhdGgiOiAiL21vdmllIiwNCiAgInRscyI6ICJ0bHMiDQp9</p>
 
-<span class="hljs-comment">//C语言的两种标准主函数</span>
-
-<span class="hljs-comment">//1.C99标准的主函数，初学</span>
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> </span>
-<span class="hljs-function"></span>&#123;
-
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-
-&#125;
-
-<span class="hljs-comment">//2.标准主函数，涉及到命令行参数时使用</span>
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> *argv[])</span> </span>
-<span class="hljs-function"></span>&#123;
-
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-
-&#125;
-
-<span class="hljs-comment">//3.C++标准主函数标准形式</span>
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-
-&#125;
-
-<span class="hljs-comment">//return 0;程序正常结束</span></code></pre></div>
-
-<h1 id="2-头文件"><a href="#2-头文件" class="headerlink" title="2 头文件"></a>2 头文件</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt; //包含头文件，standard in out标准输入输出</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt; //standard library标准库</span></span>
-<span class="hljs-comment">//如何判断函数包含于哪个头文件，可百度也可选中函数右击使用转定义查看，或查看msdn</span>
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"hello word"</span>); <span class="hljs-comment">//printf函数在头文件stdio.h中</span>
-	system(<span class="hljs-string">"pause"</span>); <span class="hljs-comment">//system函数在头文件stdlib.h中</span>
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="3-内建函数"><a href="#3-内建函数" class="headerlink" title="3 内建函数"></a>3 内建函数</h1><p>内建函数：编译器自带的函数，原本应该包含在头文件中，调用函数时应添加头文件，但是编译器如果内置了，则不加头文件也可直接使用函数，不报错。</p>
-<div class="hljs"><pre><code class="hljs c"><span class="hljs-comment">//#include &lt;stdio.h&gt;</span>
-<span class="hljs-comment">//#include &lt;stdlib.h&gt;</span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"hello word\nhello word\n"</span>); <span class="hljs-comment">// \n:转义字符，换行</span>
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="4-数据类型"><a href="#4-数据类型" class="headerlink" title="4 数据类型"></a>4 数据类型</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-comment">/*</span>
-<span class="hljs-comment">基本数据类型：数值类型【整形，浮点型】、字符型</span>
-<span class="hljs-comment">构造类型：数组、结构体、联合、枚举</span>
-<span class="hljs-comment">指针</span>
-<span class="hljs-comment">整形(-2,-1,0,1,2)int,short,long,long long</span>
-<span class="hljs-comment">*/</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, <span class="hljs-number">12</span>); <span class="hljs-comment">//格式化输出符号 %d:转义字符 以十进制整数形式输出参数/数据</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"我们的数：%d测试\n"</span>, <span class="hljs-number">12</span>);
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"12 十进制：%d,\n12八进制：%o,\n 12 十六进制(小写)：%x，\n 12 十六进制(大写)：%X\n"</span>, <span class="hljs-number">12</span>,<span class="hljs-number">12</span>,<span class="hljs-number">12</span>,<span class="hljs-number">12</span>);
-
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="5-int类型变量的定义"><a href="#5-int类型变量的定义" class="headerlink" title="5 int类型变量的定义"></a>5 int类型变量的定义</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-comment">// 可以直接初始化赋值，也可以先不赋值</span>
-	<span class="hljs-keyword">int</span> a = <span class="hljs-number">1234567890</span>, b = <span class="hljs-number">547383934</span>;
-	<span class="hljs-keyword">int</span> c;
-	c = <span class="hljs-number">10</span>;
-	<span class="hljs-keyword">int</span> d;
-	<span class="hljs-comment">//printf("%d\n", d);</span>
-	d = a;
-	a = b = <span class="hljs-number">10</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d,%d"</span>, a, c);
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="6-变量与常量"><a href="#6-变量与常量" class="headerlink" title="6 变量与常量"></a>6 变量与常量</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-comment">/*</span>
-<span class="hljs-comment">左值：变量</span>
-<span class="hljs-comment">右值：常量</span>
-<span class="hljs-comment">int表示数的范围(有符号):-2^31——2^31-1（-2147483648——2147483647）</span>
-<span class="hljs-comment">字节是计算机常用的存储单位，但不是最小的，计算机最小的存储单位是位，1字节=8位（8个二进制位）</span>
-<span class="hljs-comment">一个int类型数据占4个字节=32个二进制位</span>
-<span class="hljs-comment">sizeof():得到类型的大小，eg:sizeof(类型:int or float) or sizeof(变量)</span>
-<span class="hljs-comment">*/</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-keyword">int</span> a = <span class="hljs-number">3</span>; <span class="hljs-comment">//最大是2147483647，若超出范围则变为负数，相当于是一个圈</span>
-	<span class="hljs-keyword">int</span> b, c, d;
-	<span class="hljs-keyword">int</span> e, <span class="hljs-comment">//注释说明变量含义</span>
-		f, <span class="hljs-comment">//注释说明变量含义</span>
-		g, <span class="hljs-comment">//注释说明变量含义</span>
-		h; <span class="hljs-comment">//注释说明变量含义</span>
-
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, a);
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>, <span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">float</span>));
-
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-
-&#125;</code></pre></div>
-
-<h1 id="7-无符号整形"><a href="#7-无符号整形" class="headerlink" title="7 无符号整形"></a>7 无符号整形</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-comment">/*</span>
-<span class="hljs-comment">无符号整形 unsigned int:0-2^32-1(0-4294967295)，用%u转移，占用4个字节</span>
-<span class="hljs-comment">*/</span>
-
-
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> a = <span class="hljs-number">-1</span>; <span class="hljs-comment">//无符号整形</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%u\n"</span>, a);  <span class="hljs-comment">// %u:无符号十进制整形输出；out：4294967295</span>
-					    <span class="hljs-comment">// %d:有符号十进制整形输出</span>
-	<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> b = <span class="hljs-number">1</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%u\n"</span>, b); <span class="hljs-comment">// out:1</span>
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="8-其他整形"><a href="#8-其他整形" class="headerlink" title="8 其他整形"></a>8 其他整形</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	short s; <span class="hljs-comment">//短整形（short int）</span>
-	
-	s = <span class="hljs-number">12</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"short占用字节数为:%d\n"</span>, <span class="hljs-keyword">sizeof</span>(s));	
-	<span class="hljs-comment">//短整形(short)大小为2字节；不同系统大小不同，但是《c和指针》标准规定int型不小于short型，某些系统中int可能大小为2字节；</span>
-	<span class="hljs-comment">//有符号 signed short：-2^15——2^15-1（-32768-32767）</span>
-	<span class="hljs-comment">//无符号 unsigned short：0——2^16-1（0-65535）</span>
-	<span class="hljs-comment">//两种表示个数一样</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"s=%hd\n"</span>, s);
-	<span class="hljs-comment">//short型输出格式符为%hd，用%d也可</span>
-
-
-	<span class="hljs-keyword">long</span> l = <span class="hljs-number">13</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"long占用字节数为:%d\n"</span>, <span class="hljs-keyword">sizeof</span>(l));
-	<span class="hljs-comment">//long int(长整形)，可简写为long</span>
-	<span class="hljs-comment">//占用4字节存储空间，《c和指针》标准中规定long不小于int的长度即可</span>
-	<span class="hljs-comment">//有符号long（signed long）及无符号long（unsigned long）表示范围同int，输出格式符为 %ld 也可用 %d</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"s=%ld\n"</span>, l);
-
-	<span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ll = <span class="hljs-number">15</span>;
-	<span class="hljs-comment">//long long是C99标准中扩展的新类型，VC++6.0中不支持此类型</span>
-	<span class="hljs-comment">//long long占用8字节</span>
-	<span class="hljs-comment">//无符号（unsigned long long int）0——2^64-1</span>
-	<span class="hljs-comment">//有符号（signed long long int）-2^63——2^63-1</span>
-	<span class="hljs-comment">//输出格式符：%lld</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"long long占用字节数为:%d\n"</span>, <span class="hljs-keyword">sizeof</span>(ll));
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"ll=%lld"</span>, ll);
-
-	system(<span class="hljs-string">"pause"</span>); <span class="hljs-comment">//卡住还可以用getchar(); or while(1);</span>
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="9-变量取地址"><a href="#9-变量取地址" class="headerlink" title="9 变量取地址"></a>9 变量取地址</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-comment">/*</span>
-<span class="hljs-comment">C语言的优势就是通过地址可以操作内存空间</span>
-<span class="hljs-comment">单位Bit——Kb——Mb——Gb</span>
-<span class="hljs-comment">取地址符：&amp;</span>
-<span class="hljs-comment">表达式：&amp;a、12+13、a都是表达式，每个表达式都有一个结果</span>
-<span class="hljs-comment">语句：有分号的是语句</span>
-<span class="hljs-comment">*/</span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-keyword">int</span> a = <span class="hljs-number">12</span>;
-	
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%p\n"</span>, &amp;a); <span class="hljs-comment">//%p就是以地址形式（16进制）输出，通常用16进制输出地址。</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%#p\n"</span>, &amp;a);<span class="hljs-comment">//%#p就是以地址形式输出，加上前缀0x</span>
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="10-sacnf-amp-变量的输入"><a href="#10-sacnf-amp-变量的输入" class="headerlink" title="10 sacnf &amp; 变量的输入"></a>10 sacnf &amp; 变量的输入</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> _CRT_SECURE_NO_WARNINGS <span class="hljs-comment">//宏需要加在最前才有效</span></span>
-
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-<span class="hljs-comment">//#pragma warning(disable:警告码) 可去除相应的警告</span>
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-keyword">int</span> a;
-	<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%d"</span>, &amp;a);
-
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<div class="hljs"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-keyword">int</span> a = <span class="hljs-number">12</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"前 a=%d\n"</span>, a);
-	scanf_s(<span class="hljs-string">"%d"</span>, &amp;a);	<span class="hljs-comment">//一定要加取地址符&amp;，否则会引起异常。</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"后 a=%d\n"</span>, a);
-
-	<span class="hljs-keyword">int</span> b = <span class="hljs-number">1</span>,
-		c = <span class="hljs-number">2</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"前b=%d c=%d\n"</span>, b, c);
-	<span class="hljs-comment">//输入前想加入输入提示，可以在前面加个printf（）</span>
-	scanf_s(<span class="hljs-string">"%d,%d"</span>, &amp;b, &amp;c); <span class="hljs-comment">//两个%d（转义字符）之间用什么隔开，输入时就用什么隔开（默认为空格）</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"后b=%d c=%d\n"</span>, b, c);
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="11-浮点型（float）"><a href="#11-浮点型（float）" class="headerlink" title="11 浮点型（float）"></a>11 浮点型（float）</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-comment">/*</span>
-<span class="hljs-comment">精度的定义：第一个非零数到最后一位的个数，并非小数点后位数。</span>
-<span class="hljs-comment"></span>
-<span class="hljs-comment">float:</span>
-<span class="hljs-comment">表示数范围：（-3.40282e+038 ~ -1.17549e-038） 0.0 （+1.17549e-038 ~ +3.40282e+038）</span>
-<span class="hljs-comment">标准规定：指数范围不小于-37~38</span>
-<span class="hljs-comment">有效数位：6（标准规定为6）</span>
-<span class="hljs-comment">double:</span>
-<span class="hljs-comment">表示数范围： (-1.79769e+308 ~ -2.22507e-308)  0.0  (+2.22507e-308 ~ +1.79769e+308)</span>
-<span class="hljs-comment">标准规定：指数范围不小于-37~38</span>
-<span class="hljs-comment">有效数位：15（标准规定为10）</span>
-<span class="hljs-comment">long double：同double</span>
-<span class="hljs-comment">有效数位：18（标准规定为10）</span>
-<span class="hljs-comment">*/</span>
-
-<span class="hljs-meta"># <span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta"># <span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-keyword">float</span> f = <span class="hljs-number">123.45</span>; <span class="hljs-comment">// %f,占用4个字节，</span>
-	<span class="hljs-keyword">double</span> d = <span class="hljs-number">12.123</span>; <span class="hljs-comment">// %lf，占用8个字节</span>
-	<span class="hljs-keyword">long</span> <span class="hljs-keyword">double</span> ld=<span class="hljs-number">11.22</span> ; <span class="hljs-comment">// %lf，占用内存空间不小于double型，不同编译器不同，但肯定是2的倍数</span>
-
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%f,%lf,%lf\n"</span>, f, d, ld); 
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%e,%e,%e\n"</span>, f, d, ld); <span class="hljs-comment">// 科学计数法表示</span>
-
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<p>0和0.0是不同的</p>
-<div class="hljs"><pre><code class="hljs c"><span class="hljs-meta"># <span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta"># <span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-<span class="hljs-meta"># <span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;float.h&gt;</span></span>
-
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%e\n"</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">// out:8.280795e-305</span>
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%e\n"</span>, <span class="hljs-number">0.0</span>); <span class="hljs-comment">// out:0.000000e+00</span>
-
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%e\n"</span>, FLT_MIN); <span class="hljs-comment">//选中FLT_MIN右击选择转定义，可查看浮点型变量最大最小值</span>
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
-
-<h1 id="12-浮点型的精度"><a href="#12-浮点型的精度" class="headerlink" title="12 浮点型的精度"></a>12 浮点型的精度</h1><div class="hljs"><pre><code class="hljs c"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
-
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>
-<span class="hljs-function"></span>&#123;
-	<span class="hljs-keyword">float</span> f = <span class="hljs-number">2333.345678</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%f\n"</span>, f); <span class="hljs-comment">//out:2333.345703,float型有效数位为6，经测试本机为7位，只要大于等于标准就可</span>
-
-	<span class="hljs-keyword">double</span> d = <span class="hljs-number">2333.3456789123412345</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%.20lf\n"</span>, d); <span class="hljs-comment">//out:2333.34567891234109993093,可见有效数位是16位，大于标准规定的10,即可</span>
-						   <span class="hljs-comment">//由于 %f 和 %lf 可输出的小数位数是6个，所以要输出20位小数时要写为 %.20lf</span>
-
-	<span class="hljs-keyword">double</span> d2 = <span class="hljs-number">2333.34</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%.20lf\n"</span>, d2);<span class="hljs-comment">//out:2333.34000000000014551915,</span>
-	
-	<span class="hljs-keyword">double</span> d3 = <span class="hljs-number">2333.34</span>;
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%lf\n"</span>, d3);<span class="hljs-comment">//out:2333.340000,6位</span>
-
-	<span class="hljs-comment">//在vs中，long double和double完全相同。不同编译器不同。</span>
-
-	system(<span class="hljs-string">"pause"</span>);
-	<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-&#125;</code></pre></div>
             </article>
+            <!--
             
-              <p class="note note-warning">本文作者：知否_Darren<br>本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
             
+            -->
+             <!--版权信息-->
+              
+                <!-- 若要指定作者及链接，在front-matter中更换即可 -->
+<p class="note note-warning">
+	本文作者：<a href='https://darrenclover.gitee.io'>Darren</a><br/>
+	本文地址：<a href='https://darrenclover.gitee.io/posts/2020/04/20200419112558.html'>https://darrenclover.gitee.io/posts/2020/04/20200419112558.html</a><br/>
+	
+		本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！
+	
+	
+</p>
+              
+            <!--之间有改动更新请注意-->
             <hr>
             <div>
               <div class="post-metas mb-3">
@@ -1175,7 +921,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/c%E8%AF%AD%E8%A8%80/">c语言</a>
+                      <a class="hover-with-bg" href="/categories/%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%B2%E6%B5%AA/">优雅的冲浪</a>
                     
                   </div>
                 
@@ -1183,7 +929,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/C%E8%AF%AD%E8%A8%80/">C语言</a>
+                      <a class="hover-with-bg" href="/tags/%E4%BC%98%E9%9B%85%E7%9A%84%E5%86%B2%E6%B5%AA/">优雅的冲浪</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%85%8D%E8%B4%B9%E8%8A%82%E7%82%B9/">免费节点</a>
                     
                   </div>
                 
@@ -1210,16 +958,15 @@
         
               </div>
 
-
               
               
                 <div class="post-prevnext row">
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/2020/04/25/36%E4%B8%AA%E7%9A%84web-button-%E6%A0%B7%E5%BC%8F/">
+                      <a href="/posts/2020/04/20200420052233.html">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">36个的web button 样式</span>
+                        <span class="hidden-mobile">Fluid 加入 Valine 评论模块</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -1227,8 +974,8 @@
                   <div class="post-next col-6">
                     
                     
-                      <a href="/2020/04/21/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Fusion-App%E5%B0%86%E4%BD%A0%E7%9A%84%E7%BD%91%E7%AB%99%E6%89%93%E5%8C%85%E6%88%90APP/">
-                        <span class="hidden-mobile">如何使用Fusion App将你的网站打包成APP</span>
+                      <a href="/posts/2020/04/20200419090736.html">
+                        <span class="hidden-mobile">ios/苹果移动设备下载ssr方法</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -1437,7 +1184,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "C语言学习笔记（一）&nbsp;",
+        "免费节点（持续更新）&nbsp;",
       ],
       cursorChar: "☆",
       typeSpeed: 70,
