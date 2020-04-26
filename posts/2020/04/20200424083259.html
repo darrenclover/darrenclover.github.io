@@ -828,9 +828,43 @@
 
 
 
+
 <div class="container-fluid">
   <div class="row">
-    <div class="d-none d-lg-block col-lg-2"></div>
+    
+    <div class="d-none d-lg-block col-lg-2">  
+    
+            <!--此处生成本页二维码-->
+            <div id="qrcode" style="padding-left:8px; width:150px; height:165px; margin-top:30px; margin-left:50px; font-family: 楷体;  border:10px solid #bde4e4;background:#ffffff; font-weight: 600; text-align: center; color: rgba(0, 0, 0, 0.9); font-size: 0.5cm;">手&nbsp机&nbsp观&nbsp看&nbsp</div>
+            <!--
+                <script type="text/javascript" src="jquery.min.js"></script>
+                <script type="text/javascript" src="qrcode.min.js"></script>
+            -->
+              <script type="text/javascript" src="http://static.runoob.com/assets/jquery/2.0.3/jquery.min.js"></script>
+              <script type="text/javascript" src="http://static.runoob.com/assets/qrcode/qrcode.min.js"></script>
+       
+              <script type="text/javascript">
+              //初始化存放二维码的div
+              var qrcode = new QRCode(document.getElementById("qrcode"), {
+                width : 110,
+                height : 110
+              });
+              //window.location.href获取到URL
+              qrcode.makeCode(window.location.href);
+       
+            </script>
+            <!--生成本页二维码结束-->
+
+            <!--生成下载App二维码-->
+            <div style="padding-left:1px; width:150px; height:170px; margin-top:80px; margin-left:50px; font-family: 楷体;  border:10px solid #bde4e4;background:#ffffff; font-weight: 600; text-align: center; color: rgba(0, 0, 0, 0.9); font-size: 0.5cm;">
+              App下载
+              <img src="/img/app/download.png" srcset="/img/loading.gif" height="120" width="130">
+            </div>
+            <!--生成下载App二维码结束-->
+    
+    </div>
+
+
     <div class="col-lg-8 nopadding-md">
       <div class="container nopadding-md" id="board-ctn">
         <div class="py-5" id="board">
@@ -1185,6 +1219,8 @@
             <!--之间有改动更新请注意-->
             <hr>
             
+
+
             <div>
               <div class="post-metas mb-3">
                 
@@ -1300,6 +1336,7 @@
   <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
   <div id="tocbot"></div>
 </div>
+
 
       </div>
     
