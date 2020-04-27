@@ -19,7 +19,7 @@
   <meta name="description" content="分享技术，分享生活">
   <meta name="author" content="Darren">
   <meta name="keywords" content="python,C/C++,图像处理，人工智能，目标检测，目标识别">
-  <title>Hexo博客进阶——自定义文章页永久链接（短链接） - 知否_Darren ’s blog</title>
+  <title>生成本页地址二维码，扫一扫手机看——结合addlink插件 - 知否_Darren ’s blog</title>
   
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
@@ -141,7 +141,7 @@
 </nav>
 
     <div class="view intro-2" id="background" parallax=true
-         style="background: url('/img/demo/duanlianjie.jpg') no-repeat center center;
+         style="background: url('/img/hexo/hexo.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -154,8 +154,8 @@
               
                 <div class="mt-3 post-meta">
                   <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-                  <time datetime="2020-04-27 00:02">
-                    星期一, 四月 27日 2020, 12:02 凌晨
+                  <time datetime="2020-04-27 22:00">
+                    星期一, 四月 27日 2020, 10:00 晚上
                   </time>
                 </div>
               
@@ -165,7 +165,7 @@
                   
                   <span class="post-meta mr-2">
                     <i class="iconfont icon-chart"></i>
-                    525 字
+                    834 字
                   </span>
                 
 
@@ -175,7 +175,7 @@
                       <i class="iconfont icon-clock-fill"></i>
                     
                     
-                    62
+                    120
                      分钟
                   </span>
                 
@@ -866,7 +866,7 @@
                }
                return out;
            }
-           content = utf16to8('https://darrenclover.gitee.io/posts/2020/04/20200427120229.html');
+           content = utf16to8('https://darrenclover.gitee.io/posts/2020/04/20200427100012.html');
            $('#output').qrcode({
                width: 110,
                height: 110,
@@ -892,48 +892,90 @@
           <div class="post-content mx-auto" id="post">
             
               <p class="note note-warning">
-                本文最后更新于：星期一, 四月 27日 2020, 10:01 晚上
+                本文最后更新于：星期一, 四月 27日 2020, 11:45 晚上
               </p>
             
             <article class="markdown-body">
-              <h2 id="Hexo-自定义文章链接"><a href="#Hexo-自定义文章链接" class="headerlink" title="Hexo 自定义文章链接"></a>Hexo 自定义文章链接</h2><p><strong>我们在访问文章页面时，会发现默认的文章链接相当的长</strong></p>
-<p>尤其是当链接中包含中文时，会出现很多转义字符，不便于我们把写好的文章分享给别人</p>
-<p>当然，hexo为我们提供了可使用的插件hexo-abbrlink，但是我在安装后无法正常使用，出现所有文章的链接全部指向同一个路径undefined/xxxx.html的问题</p>
-<p>虽然后来发现了问题所在，但是我已经使用本文方法对链接做了优化，并且认为此方法优于hexo-addrlink，hexo-addrlink插件虽然可以给每一篇文章通过文章标题（hexo中文章标题是不能重复的）生成唯一的编码，来实现链接唯一化。但是还是觉得这个插件生成的唯一代码太长了，也没有逻辑，我还是希望能够用时间和日期作为唯一链接。通过百度和谷歌后，找到了一个大神的解决方法，下面分享出来。</p>
-<p>具体原理略过吧，直接上步骤123了</p>
-<p>放个效果图（我没有定义成最短的形式，方便管理，可以自定义成更短的哈）</p>
-<p><img src="/img/demo/duanlianjie.jpg" srcset="/img/loading.gif" alt=""></p>
-<h3 id="1-新建js文件"><a href="#1-新建js文件" class="headerlink" title="1. 新建js文件"></a>1. 新建js文件</h3><p>在 <strong>主题文件夹/scripts/</strong>路径下，新建 datelink.js 吧，名字随意，我懒我就没改哈哈。</p>
-<p>datelink.js内容如下</p>
-<div class="hljs"><pre><code class="hljs java"><span class="hljs-string">'use strict'</span>;
+              <h1 id="扫一扫，手机查看本页内容"><a href="#扫一扫，手机查看本页内容" class="headerlink" title="扫一扫，手机查看本页内容"></a>扫一扫，手机查看本页内容</h1><p>本站采用的是hexo官网推荐的Fluid博客主题，当初在官网浏览其他主题时，发现可以通过扫码手机查看本页内容，所以一直在寻找可以实现这个功能的方法；昨天发现hexo官网给出了一个hexo-addlink插件，可以在文章末尾自动生成一个版权声明，如图</p>
+<p><img src="/img/hexo/banquan.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>因此我们利用这个插件生成的本文地址，通过js实现自动生成地址二维码的功能，不会生成图片，不占用空间。</p>
+<h2 id="1-安装hexo-addlink"><a href="#1-安装hexo-addlink" class="headerlink" title="1 安装hexo-addlink"></a>1 安装hexo-addlink</h2><h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><div class="hljs"><pre><code class="hljs plain">npm install hexo-addlink --save</code></pre></div>
+
+<h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>在hexo根目录下的<code>_config.yml</code>文件中添加如下代码（此步骤用于在文章底部生成版权声明，如不需要添加版权声明可跳过）</p>
+<div class="hljs"><pre><code class="hljs yml"><span class="hljs-attr">addlink:</span>
+  <span class="hljs-attr">before_text:</span> <span class="hljs-string">本文地址：</span> <span class="hljs-comment"># text before the post link </span>
+  <span class="hljs-attr">after_text:</span>  <span class="hljs-comment"># text after the post link</span></code></pre></div>
+
+<h2 id="2-修改hexo-addlink代码"><a href="#2-修改hexo-addlink代码" class="headerlink" title="2 修改hexo-addlink代码"></a>2 修改hexo-addlink代码</h2><p>我安装这个插件后，生成的地址中存在一个字段是undefined</p>
+<p>例如<code>域名/posts/2020/04/undefined.html</code></p>
+<p>最后查看源码时发现hexo-addlink这个插件没有定义优先级，因此默认为10；而我安装了hexo-abbrlink这个插件定义的优先级为15，按hexo的规则是数字越大越晚执行，因此hexo-abbrlink在hexo-addlink后执行。所以，最后那个字段没有生成自然是undefined。</p>
+<p>所以需要修改hexo-addlink的优先级为20，我们找到hexo-addlink安装的位置<code>/node_modules/hexo-addlink/index.js</code>修改index.js最后一行，如下：</p>
+<div class="hljs"><pre><code class="hljs js"><span class="hljs-meta">'use strict'</span>;
+
 <span class="hljs-keyword">var</span> hexo = hexo || &#123;&#125;;
-hexo.extend.filter.register(<span class="hljs-string">'before_post_render'</span>,function(data)
-&#123;
-    <span class="hljs-keyword">var</span> log = <span class="hljs-keyword">this</span>.log;
-    <span class="hljs-keyword">if</span> (data.layout == <span class="hljs-string">'post'</span>) 
-    &#123;
-        let datelink
-        <span class="hljs-keyword">if</span> (!datelink) 
-        &#123;
-            <span class="hljs-keyword">var</span> getdate = data.date;
-            <span class="hljs-comment">//log.i("get date [%s]", getdate.format('YYYYMMDDhhmmss'));</span>
-            data.datelink = getdate.format(<span class="hljs-string">'YYYYMMDDhhmmss'</span>);
-        &#125;
-    &#125;
-    <span class="hljs-keyword">return</span> data
-&#125;,<span class="hljs-number">15</span>);</code></pre></div>
+<span class="hljs-keyword">var</span> config = hexo.config;
+<span class="hljs-keyword">var</span> addlink = hexo.config.addlink;
 
-<h3 id="2-修改HEXO配置文件-config-yml"><a href="#2-修改HEXO配置文件-config-yml" class="headerlink" title="2. 修改HEXO配置文件 _config.yml"></a>2. 修改HEXO配置文件 _config.yml</h3><p>注意这个是hexo的配置文件，不是主题的配置文件</p>
-<div class="hljs"><pre><code class="hljs yml"><span class="hljs-attr">permalink:</span> <span class="hljs-string">posts/:year/:month/:datelink.html</span>
-<span class="hljs-attr">permalink_defaults:</span>
-<span class="hljs-attr">datelink:</span></code></pre></div>
-<p>注意这并不是链接最短的形式，如果你想使更短可以这么写</p>
-<div class="hljs"><pre><code class="hljs yml"><span class="hljs-attr">permalink:</span> <span class="hljs-string">:datelink.html</span>
-<span class="hljs-attr">permalink_defaults:</span>
-<span class="hljs-attr">datelink:</span></code></pre></div>
+hexo.extend.filter.register(<span class="hljs-string">'before_post_render'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>&#123;
+  <span class="hljs-keyword">if</span> (!addlink || !config.url || data.layout !== <span class="hljs-string">'post'</span>) &#123;
+    <span class="hljs-keyword">return</span> data;
+  &#125;
 
-<p>具体想让链接什么格式，自行修改<code>permalink:</code>就好，这才叫自定义，哈哈</p>
-<h3 id="3-hexo三连"><a href="#3-hexo三连" class="headerlink" title="3. hexo三连"></a>3. hexo三连</h3><p>接下来<code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code>就好啦</p>
+  <span class="hljs-keyword">var</span> domain = config.url;
+  <span class="hljs-keyword">var</span> beforeText = addlink.before_text || <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> afterText = addlink.after_text || <span class="hljs-string">''</span>;
+  <span class="hljs-keyword">var</span> layout = data.layout;
+  <span class="hljs-keyword">var</span> href = domain + <span class="hljs-string">'/'</span> + data.path;
+  <span class="hljs-keyword">var</span> hrefText = beforeText + <span class="hljs-string">' ['</span> + href + <span class="hljs-string">']('</span> + href + <span class="hljs-string">') '</span> + afterText;
+
+  data.content += <span class="hljs-string">'\n\n'</span> + hrefText;
+&#125;,<span class="hljs-number">20</span>);<span class="hljs-comment">//这里添加优先级选项</span></code></pre></div>
+
+<h2 id="3-添加二维码生成脚本"><a href="#3-添加二维码生成脚本" class="headerlink" title="3 添加二维码生成脚本"></a>3 添加二维码生成脚本</h2><p>我使用的Fluid主题，以此主题为例进行说明</p>
+<p>在<code>/themes/fluid/layout/</code>路径下的post.ejs文件中添加如下代码：</p>
+<div class="hljs"><pre><code class="hljs js">&lt;!--此处生成本页二维码--&gt;
+&lt;script src=<span class="hljs-string">"//cdn.bootcss.com/jquery/1.8.2/jquery.min.js"</span>&gt;&lt;<span class="hljs-regexp">/script&gt;</span>
+<span class="hljs-regexp">&lt;script src="/</span><span class="hljs-regexp">/cdn.bootcss.com/</span>jquery.qrcode/<span class="hljs-number">1.0</span>/jquery.qrcode.min.js<span class="hljs-string">"&gt;&lt;/script&gt;</span>
+&lt;div id="output" style="padding-left:1px; width:150px; height:170px; margin-top:80px; margin-left:35px; font-family: 楷体;  border:10px solid #bde4e4;background:#ffffff; font-weight: 600; text-align: center; color: rgba(0, 0, 0, 0.9); font-size: 0.5cm;"&gt;扫一扫手机看&lt;/div&gt;
+&lt;script type=<span class="hljs-string">"text/javascript"</span>&gt;
+   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">utf16to8</span>(<span class="hljs-params">str</span>) </span>&#123;
+     <span class="hljs-keyword">var</span> out, i, len, c;
+     out = <span class="hljs-string">""</span>;
+     len = str.length;
+     <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; len; i++) &#123;
+         c = str.charCodeAt(i);
+         <span class="hljs-keyword">if</span> ((c &gt;= <span class="hljs-number">0x0001</span>) &amp;&amp; (c &lt;= <span class="hljs-number">0x007F</span>)) &#123;
+             out += str.charAt(i);
+         &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (c &gt; <span class="hljs-number">0x07FF</span>) &#123;
+             out += <span class="hljs-built_in">String</span>.fromCharCode(<span class="hljs-number">0xE0</span> | ((c &gt;&gt; <span class="hljs-number">12</span>) &amp; <span class="hljs-number">0x0F</span>));
+             out += <span class="hljs-built_in">String</span>.fromCharCode(<span class="hljs-number">0x80</span> | ((c &gt;&gt; <span class="hljs-number">6</span>) &amp; <span class="hljs-number">0x3F</span>));
+             out += <span class="hljs-built_in">String</span>.fromCharCode(<span class="hljs-number">0x80</span> | ((c &gt;&gt; <span class="hljs-number">0</span>) &amp; <span class="hljs-number">0x3F</span>));
+         &#125; <span class="hljs-keyword">else</span> &#123;
+             out += <span class="hljs-built_in">String</span>.fromCharCode(<span class="hljs-number">0xC0</span> | ((c &gt;&gt; <span class="hljs-number">6</span>) &amp; <span class="hljs-number">0x1F</span>));
+             out += <span class="hljs-built_in">String</span>.fromCharCode(<span class="hljs-number">0x80</span> | ((c &gt;&gt; <span class="hljs-number">0</span>) &amp; <span class="hljs-number">0x3F</span>));
+         &#125;
+     &#125;
+     <span class="hljs-keyword">return</span> out;
+ &#125;
+ 
+ content = utf16to8(<span class="hljs-string">'&lt;%- decodeURI((page.link_url || url)).replace('</span>index.html<span class="hljs-string">', '</span><span class="hljs-string">') %&gt;'</span>); 
+ &lt;!--括号内调用了addlink插件的生成的地址--&gt;
+ $(<span class="hljs-string">'#output'</span>).qrcode(&#123;
+     width: <span class="hljs-number">110</span>,
+     height: <span class="hljs-number">110</span>,
+     render: <span class="hljs-string">"canvas"</span>,
+     correctLevel: <span class="hljs-number">0</span>,
+     text: content
+ &#125;);
+ &lt;<span class="hljs-regexp">/script&gt;</span>
+<span class="hljs-regexp"> &lt;!--生成本页二维码结束--&gt;</span></code></pre></div>
+
+<p>插入代码的位置根据个人需要而定，我把上述代码插在了第三个div的下边，如图</p>
+<p><img src="/img/hexo/daimaweizhi.jpg" srcset="/img/loading.gif" alt=""></p>
+<p>完工，执行hexo三连，本地查看</p>
+<div class="hljs"><pre><code class="hljs plain">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></pre></div>
+
+<h2 id="4-效果图"><a href="#4-效果图" class="headerlink" title="4 效果图"></a>4 效果图</h2><p><img src="/img/hexo/xiaoguo.jpg" srcset="/img/loading.gif" alt=""></p>
 
             </article>
             <!--
@@ -946,7 +988,7 @@ hexo.extend.filter.register(<span class="hljs-string">'before_post_render'</span
                 <!-- 若要指定作者及链接，在front-matter中更换即可 -->
 <p class="note note-warning">
 	本文作者：<a href='https://darrenclover.gitee.io'>Darren</a><br/>
-	本文地址：<a href='https://darrenclover.gitee.io/posts/2020/04/20200427120229.html'>https://darrenclover.gitee.io/posts/2020/04/20200427120229.html</a><br/>
+	本文地址：<a href='https://darrenclover.gitee.io/posts/2020/04/20200427100012.html'>https://darrenclover.gitee.io/posts/2020/04/20200427100012.html</a><br/>
 	
 		本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！
 	
@@ -969,11 +1011,11 @@ hexo.extend.filter.register(<span class="hljs-string">'before_post_render'</span
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/Hexo%E7%9F%AD%E9%93%BE%E6%8E%A5/">Hexo短链接</a>
+                      <a class="hover-with-bg" href="/tags/%E4%BA%8C%E7%BB%B4%E7%A0%81/">二维码</a>
                     
-                      <a class="hover-with-bg" href="/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%87%E7%AB%A0%E9%93%BE%E6%8E%A5/">自定义文章链接</a>
+                      <a class="hover-with-bg" href="/tags/%E6%89%AB%E4%B8%80%E6%89%AB%E6%89%8B%E6%9C%BA%E7%9C%8B/">扫一扫手机看</a>
                     
-                      <a class="hover-with-bg" href="/tags/hexo-abbrlink/">hexo-abbrlink</a>
+                      <a class="hover-with-bg" href="/tags/hexo-addlink/">hexo-addlink</a>
                     
                   </div>
                 
@@ -1006,18 +1048,12 @@ hexo.extend.filter.register(<span class="hljs-string">'before_post_render'</span
                   <div class="post-prev col-6">
                     
                     
-                      <a href="/posts/2020/04/20200427100012.html">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">生成本页地址二维码，扫一扫手机看——结合addlink插件</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </div>
                   <div class="post-next col-6">
                     
                     
-                      <a href="/posts/2020/04/20200425051754.html">
-                        <span class="hidden-mobile">36个的web button 样式</span>
+                      <a href="/posts/2020/04/20200427120229.html">
+                        <span class="hidden-mobile">Hexo博客进阶——自定义文章页永久链接（短链接）</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -1266,7 +1302,7 @@ hexo.extend.filter.register(<span class="hljs-string">'before_post_render'</span
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "Hexo博客进阶——自定义文章页永久链接（短链接）&nbsp;",
+        "生成本页地址二维码，扫一扫手机看——结合addlink插件&nbsp;",
       ],
       cursorChar: "☆",
       typeSpeed: 70,

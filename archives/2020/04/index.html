@@ -171,12 +171,20 @@
                 
 
 <div class="list-group">
-  <p class="h4">共计 10 篇文章</p>
+  <p class="h4">共计 11 篇文章</p>
   <hr>
   
     
       
       <p class="h5">2020</p>
+    
+    <a href="/posts/2020/04/20200427100012.html" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">
+        
+        生成本页地址二维码，扫一扫手机看——结合addlink插件</span>
+      <span style="float: right;">04-27</span>
+    </a>
+  
     
     <a href="/posts/2020/04/20200427120229.html" class="list-group-item list-group-item-action">
       <span class="archive-post-title">
@@ -251,15 +259,19 @@
       <span style="float: right;">04-19</span>
     </a>
   
-    
-    <a href="/posts/2020/04/20200419102417.html" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">
-        
-        hello clover</span>
-      <span style="float: right;">04-19</span>
-    </a>
-  
 </div>
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/archives/2020/04/page/2/">2</a><a class="extend next" rel="next" href="/archives/2020/04/page/2/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
 
 
 
