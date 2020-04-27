@@ -1021,13 +1021,47 @@
                 
                 
   <div id="vcomments"></div>
-  <script defer src="https://cdn.staticfile.org/valine/1.4.5/Valine.min.js" ></script>
+  <script defer src="https://cdn.staticfile.org/valine/1.4.14/Valine.min.js" ></script>
 
   <script type="text/javascript">
     var oldLoadVa = window.onload;
     window.onload = function () {
       oldLoadVa && oldLoadVa();
-
+      localeName = 'darren',
+      localeMode = {	
+              "nick": "昵称",
+              "mail": "邮箱（必填）",
+              "link": "博客地址(http://)",
+              "nickFail":"昵称不能少于3字节.",
+              "mailFail":"请确认您的电子邮件地址.",
+              "sofa": "无可奉告.",
+              "submit": "提交",
+              "reply": "回复",
+              "cancelReply": "取消回复",
+              "comments": "评论",
+              "cancel": "取消",
+              "confirm": "确认",
+              "continue": "继续",
+              "more": "加载更多...",
+              "preview": "预览",
+              "emoji": "表情",
+              "expand": "展开....",
+              "seconds": "秒之前",
+              "minutes": "分钟前",
+              "hours": "小时前",
+              "days": "天前",
+              "now": "刚刚",
+              "uploading":"上传 ...",
+              "uploadDone":"上传完成!",
+              "busy":"提交正忙,请稍等...",
+              "code-98":"Valine初始化失败，请检查你的av-min.js版本.",
+              "code-99": "Valine initialization failed, Please check the `el` element in the init method.",
+              "code-100": "Valine initialization failed, Please check your appId and appKey.",
+              "code-140":"今天的API调用总数已超过开发版本限制.",
+              "code-401": "Unauthorized operation, Please check your appId and appKey.",
+              "code-403": "Access denied by API domain white list, Please check your security domain."
+          };
+    
       new Valine({
         el: "#vcomments",
         app_id: "7YiYmggzx9dypQiNenXRX7oJ-gzGzoHsz",
@@ -1037,11 +1071,16 @@
         avatar: "retro",
         meta: ["nick","mail","link"],
         pageSize: "10",
-        lang: "zh-CN",
+        //lang: "zh-CN",
+        lang: localeName,
+        langMode: localeMode,
         highlight: true,
         recordIP: true,
         serverURLs: "",
-        mathJax: false
+        mathJax: false,
+        enableQQ: true,
+        requiredFields: ['mail'],
+        recordIP: true
       });
     };
   </script>
