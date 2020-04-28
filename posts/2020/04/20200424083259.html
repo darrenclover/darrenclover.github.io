@@ -845,7 +845,7 @@
             <!--此处生成本页二维码-->
             <script src="//cdn.bootcss.com/jquery/1.8.2/jquery.min.js"></script>
             <script src="//cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
-            <div id="output" style="padding-left:1px; width:150px; height:170px; margin-top:80px; margin-left:35px; font-family: 楷体;  border:10px solid #bde4e4;background:#ffffff; font-weight: 600; text-align: center; color: rgba(0, 0, 0, 0.9); font-size: 0.5cm;">扫一扫手机看</div>
+            <div id="output" style="border-radius:25px; padding-left:1px; width:150px; height:170px; margin-top:80px; margin-left:35px; font-family: 楷体;  border:10px solid #bde4e4;background:#ffffff; font-weight: 600; text-align: center; color: rgba(0, 0, 0, 0.9); font-size: 0.5cm;">扫一扫手机看</div>
             <script type="text/javascript">
              function utf16to8(str) {
                var out, i, len, c;
@@ -877,9 +877,9 @@
            
            </script>
             <!--生成本页二维码结束-->
-           <script>document.getElementById("demo").innerHTML = "页面位置是 " + window.location.href;</script>
+           
             <!--生成下载App二维码-->
-            <div style="padding-left:1px; width:150px; height:175px; margin-top:80px; margin-left:35px; font-family: 楷体;  border:10px solid #bde4e4;background:#ffffff; font-weight: 600; text-align: center; color: rgba(0, 0, 0, 0.9); font-size: 0.5cm;">
+            <div style=" border-radius:25px; padding-left:1px; width:150px; height:175px; margin-top:80px; margin-left:35px; font-family: 楷体;  border:10px solid #bde4e4;background:#ffffff; font-weight: 600; text-align: center; color: rgba(0, 0, 0, 0.9); font-size: 0.5cm;">
               App下载
               <img src="/img/app/download.png" srcset="/img/loading.gif" height="120" width="130">
               
@@ -1230,7 +1230,7 @@
             -->
              
             <!--修改的版权信息-->
-            <div style="border:5px solid #e8ebeb; padding-left:10px;">
+            <div style="height: 100px; border-radius:15px; border:5px solid #e8ebeb; padding-left:12px; padding-top:7px;">
               本文作者：Darren
               <div id="banquan" onclick="window.open(window.location.href,'_self')" style="cursor: pointer;" onmousemove="this.style.color='#33CCAE'" onmouseout="this.style.color='#666666'"></div>
               本博客所有文章除特别声明外，均采用 CC BY-SA 3.0协议 。转载请注明出处！
@@ -1258,29 +1258,7 @@
                   </div>
                 
               </div>
-
-              <!--赞赏模块-->
-              <div>
-                <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-                <div></div>
-                <button class="button green round" id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-                  <span>关注 Clover</span>
-                </button>
-                <div id="QR" style="display: none;">
-              
-                  
-                    <div id="wechat" style="display: inline-block" class="col-12 col-md-4 m-auto index-img">
-                      <br>
-                      <a href="/img/douyin.png" rel="group"><img id="wechat_qr" src="/img/douyin.png" srcset="/img/loading.gif" alt="clover 抖音"></a>
-                      <br><p>clover</p>
-                    </div>                 
-              
-                </div>
-                </div>
-        
-              </div>
-              <!--赞赏模块-->
-              
+             
               
                 <div class="post-prevnext row">
                   <div class="post-prev col-6">
@@ -1305,6 +1283,27 @@
                   </div>
                 </div>
               
+              <!--赞赏模块-->
+              <div>
+                <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+                <div></div>
+                <button class="button green round" id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+                  <span>关注 Clover</span>
+                </button>
+                <div id="QR" style="display: none;">
+              
+                  
+                    <div id="wechat" style="display: inline-block" class="col-12 col-md-4 m-auto index-img">
+                      <br>
+                      <a href="/img/douyin.png" rel="group"><img id="wechat_qr" src="/img/douyin.png" srcset="/img/loading.gif" alt="clover 抖音"></a>
+                      <br><p>clover</p>
+                    </div>                 
+              
+                </div>
+                </div>
+        
+              </div>
+              <!--赞赏模块-->             
 
               <!--AD-->
 
