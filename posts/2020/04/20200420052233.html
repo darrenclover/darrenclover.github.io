@@ -874,13 +874,15 @@
                correctLevel: 0,
                text: content
            });
+           
            </script>
             <!--生成本页二维码结束-->
-
+           <script>document.getElementById("demo").innerHTML = "页面位置是 " + window.location.href;</script>
             <!--生成下载App二维码-->
             <div style="padding-left:1px; width:150px; height:175px; margin-top:80px; margin-left:35px; font-family: 楷体;  border:10px solid #bde4e4;background:#ffffff; font-weight: 600; text-align: center; color: rgba(0, 0, 0, 0.9); font-size: 0.5cm;">
               App下载
               <img src="/img/app/download.png" srcset="/img/loading.gif" height="120" width="130">
+              
             </div>
             <!--生成下载App二维码结束-->
     </div>
@@ -937,24 +939,22 @@
 </blockquote>
 
             </article>
+            <!--主题自带的版权信息-->
             <!--
             
               <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
             
             -->
-             <!--版权信息-->
-              
-                <!-- 若要指定作者及链接，在front-matter中更换即可 -->
-<p class="note note-warning">
-	本文作者：<a href='https://darrenclover.gitee.io'>Darren</a><br/>
-	本文地址：<a href='https://darrenclover.gitee.io/posts/2020/04/20200420052233.html'>https://darrenclover.gitee.io/posts/2020/04/20200420052233.html</a><br/>
-	
-		本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" target="_blank" rel="nofollow noopener noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！
-	
-	
-</p>
-              
-            <!--之间有改动更新请注意-->
+             
+            <!--修改的版权信息-->
+            <div style="border:5px solid #e8ebeb; padding-left:10px;">
+              本文作者：Darren
+              <div id="demo" onclick="window.open(window.location.href,'_self')" style="cursor: pointer;" onmousemove="this.style.color='#33CCAE'" onmouseout="this.style.color='#666666'"></div>
+              本博客所有文章除特别声明外，均采用 CC BY-SA 3.0协议 。转载请注明出处！
+              <script>document.getElementById("demo").innerHTML = "本文地址：" + window.location.href;</script>
+            </div>
+            <!--之间有改动更新请注意-->        
+
             <hr>
             <div>
               <div class="post-metas mb-3">
