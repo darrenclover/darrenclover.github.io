@@ -884,16 +884,17 @@
     </div>
   
 </div>
-
-<font size="5">友链格式：</font>
-<p class="note note-info">  
-  名字： 知否<br>
-  链接： https://darrenclover.gitee.io/<br>
-  描述： 分享技术，分享生活。<br>
-  头像： https://darrenclover.gitee.io/img/touxiang.jpg <br>
-  友站添加后还请在下方留言告知。<br></p>
-
-  <center>  <button onclick="javascript:window.location.href='/liuyan/';" class="button blue rarrow">友 链 申 请 </button></center>
+<div style="height: 185px; padding-left:20px; padding-top:15px; background-color: rgb(209, 239, 248); border-radius:25px;">
+<font size="5">友链格式：</font> <br>
+名字：Darren
+<div id="youlian"></div>
+<script>document.getElementById("youlian").innerHTML = "链接：" + window.location.protocol + "//" + window.location.hostname;</script>
+描述：分享技术，分享生活。<br>
+<div id="touxiang"></div>
+<script>document.getElementById("touxiang").innerHTML = "头像：" + window.location.protocol + "//" + window.location.hostname + "/img/touxiang.jpg";</script>
+友站添加后还请在下方留言告知。
+</div>
+<br><br><center>  <button onclick="javascript:window.location.href='/liuyan/';" class="button blue rarrow">友 链 申 请 </button></center>
 
               </div>
             </div>
