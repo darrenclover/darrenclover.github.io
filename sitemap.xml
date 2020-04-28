@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://darrenclover.gitee.io/about/index.html</loc>
+    
+    <lastmod>2020-04-28T09:28:42.628Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://darrenclover.gitee.io/posts/2020/04/20200427120229.html</loc>
     
     <lastmod>2020-04-28T06:41:58.819Z</lastmod>
@@ -89,13 +96,6 @@
     <loc>https://darrenclover.gitee.io/liuyan/index.html</loc>
     
     <lastmod>2020-04-25T09:12:18.639Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://darrenclover.gitee.io/about/index.html</loc>
-    
-    <lastmod>2020-04-25T02:10:45.592Z</lastmod>
     
   </url>
   
