@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>LeanCLoud定时唤醒失败的解决方案</title>
+    <link href="/posts/2020/05/20200520082809.html"/>
+    <url>/posts/2020/05/20200520082809.html</url>
+    
+    <content type="html"><![CDATA[<h1 id="LeanCLoud定时唤醒失败的解决方案"><a href="#LeanCLoud定时唤醒失败的解决方案" class="headerlink" title="LeanCLoud定时唤醒失败的解决方案"></a>LeanCLoud定时唤醒失败的解决方案</h1><blockquote><p>本篇来说一下最近常发生的因流控原因，通过定时任务唤醒体验版实例失败，建议升级至标准版云引擎实例避免休眠问题</p></blockquote><h2 id="LeanCloud-休眠策略"><a href="#LeanCloud-休眠策略" class="headerlink" title="LeanCloud 休眠策略"></a>LeanCloud 休眠策略</h2><ol><li>如果应用最近一段时间（半小时）没有任何外部请求，则休眠。</li><li>休眠后如果有新的外部请求实例则马上启动。访问者的体验是第一个请求响应时间是 5 ~ 30 秒（视实例启动时间而定），后续访问响应速度恢复正常。</li><li>强制休眠：如果最近 24 小时内累计运行超过 18 小时，则强制休眠。此时新的请求会收到 503 的错误响应码，该错误可在 云引擎 &gt; 统计 中查看。</li></ol><p>那么我们只要每三十分钟之内在外部访问一次不就可以解决了么？</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>GitHub+Actions，模拟人工每30分钟在外部访问一次</p><ol><li>打开github，鼠标放在右上角，选择 setting</li></ol><p><img src="/img/Valine/1.png" srcset="/img/loading.gif" alt=""></p><ol start="2"><li>点击Developer settings</li></ol><p><img src="/img/Valine/2.png" srcset="/img/loading.gif" alt=""></p><ol start="3"><li><p>打开Github，新建一个TOKEN。</p><p> 设置名字为 GITHUB_TOKEN（必须使用GITHUB_TOKEN）<br> 勾选 repo、admin:repo_hook、workflow 等选项<br> 点击 Generate token 即可。<br> 这个 TOKEN 主要使用来启动 actions 和上传结果用的。</p></li></ol><p><img src="/img/Valine/3.png" srcset="/img/loading.gif" alt=""></p><ol start="4"><li>接下来 FORK 项目。<br>地址：<a href="https://github.com/darrenclover/WakeLeanCloud" target="_blank" rel="noopener">https://github.com/darrenclover/WakeLeanCloud</a></li></ol><p><img src="/img/Valine/4.jpg" srcset="/img/loading.gif" alt=""></p><ol start="5"><li>成功 FORK 后，进入项目的设置。添加你的 leancloud 的后台地址（也就是评论管理的后台地址）</li></ol><p><img src="/img/Valine/5.png" srcset="/img/loading.gif" alt=""></p><p>选择 Secrets，添加你的地址</p><p><img src="/img/Valine/6.png" srcset="/img/loading.gif" alt=""></p><p><img src="/img/Valine/7.png" srcset="/img/loading.gif" alt=""></p><p><code>其中 Name 的名字必须为SITE，Value 可以是多个地址，用英文半角逗号分隔。不要中文全角逗号！！！</code></p><ol start="6"><li>接下来对自己的项目点个 star 就能启动了，启动后请切换到 actions，看看是否运行成功。</li></ol><p>成功<br>那么你就可以关掉了，默认是每天 8:00-24:00 时每 30 分钟运行一次。(GitHub 时间稍有延迟，大概时 2-5 分钟。）<br>失败<br>请认真看本教程。</p><p><img src="/img/Valine/8.jpg" srcset="/img/loading.gif" alt=""></p><p><img src="/img/Valine/9.png" srcset="/img/loading.gif" alt=""></p><ol start="7"><li>修改频率（时间）</li></ol><p>修改.github/workflows/autoWakeup.yml 文件中的 cron 表达式即可。</p><p><img src="/img/Valine/10.png" srcset="/img/loading.gif" alt=""></p><p>原文地址：<a href="https://www.antmoe.com/posts/ff6aef7b/" target="_blank" rel="noopener">https://www.antmoe.com/posts/ff6aef7b/</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>valine</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>LeanCLoud</tag>
+      
+      <tag>valine</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hexo博客进阶——生成本页地址二维码，扫一扫手机看</title>
     <link href="/posts/2020/04/20200427100012.html"/>
     <url>/posts/2020/04/20200427100012.html</url>
