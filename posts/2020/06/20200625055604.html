@@ -908,7 +908,7 @@
            
             
               <p class="note note-warning">
-                本文最后更新于：星期四, 六月 25日 2020, 8:05 晚上
+                本文最后更新于：星期四, 六月 25日 2020, 8:35 晚上
               </p>
             
             <article class="markdown-body">
@@ -917,7 +917,7 @@
 <p>2、解决yolov4 使用<code>net = cv2.dnn_DetectionModel(yolov4.cfg&#39;, &#39;yolov4.weights)</code>时，报错<code>error: (-212:Parsing error) Unsupported activation: mish in function &#39;ReadDarknetFromCfgStream&#39;</code>的问题。</p>
 <hr>
 <p>3、为什么要安装 OpenCV_contrib？</p>
-<p> OpenCV3.0以上的版本，把一些不稳定的函数放到了第三方库OpenCV_contrib中（比如sift,surf等），为了应用这些功能，我们需要通过CMake OpenCV_contrib中的功能重新加入到OpenCV3.2.0中。</p>
+<p> OpenCV3.0以上的版本，把一些不稳定的函数放到了第三方库OpenCV_contrib中（比如sift,surf等），为了应用这些功能，我们需要通过CMake OpenCV_contrib中的功能重新加入到OpenCV中。</p>
 <p>关于OpenCV_contrib，可以参见官方说明：<a href="https://github.com/opencv/opencv_contrib/blob/master/README.md" target="_blank" rel="noopener">https://github.com/opencv/opencv_contrib/blob/master/README.md</a></p>
 <p>4、为什么要用CMake-gui（注意，这不是必须的）？</p>
 <p>这里我主要使用CMake-gui这个图形化界面进行安装（因为自己对ubuntu的命令不太熟悉…总是出错但又不知道怎么解决掉）。当然，也可以用终端直接输入命令操作，可以参考其他博客，这里就不再讨论。</p>
