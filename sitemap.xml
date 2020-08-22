@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://darrenclover.gitee.io/about/index.html</loc>
+    
+    <lastmod>2020-08-22T06:37:33.467Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://darrenclover.gitee.io/posts/2020/08/20200822015529.html</loc>
     
     <lastmod>2020-08-22T06:20:29.030Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://darrenclover.gitee.io/posts/2020/04/20200419112558.html</loc>
     
     <lastmod>2020-07-30T01:40:39.707Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://darrenclover.gitee.io/about/index.html</loc>
-    
-    <lastmod>2020-07-05T02:56:22.311Z</lastmod>
     
   </url>
   
